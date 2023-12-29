@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://www.sangsangls.com/html/mobile/static/common/css/style.css">
+  <link rel="stylesheet" href="https://www.sangsangls.com/html/mobile/static/common/css/libs/swiper.min.css">
+  <script src="https://www.sangsangls.com/html/mobile/static/common/js/libs/jquery-2.2.4.min.js"></script>
+  <script src="https://www.sangsangls.com/html/mobile/static/common/js/libs/jquery-ui.min.js"></script>
+  <script src="https://www.sangsangls.com/html/mobile/static/common/js/libs/swiper.min.js"></script>
+  <script src="https://www.sangsangls.com/html/mobile/static/common/js/js.use9.kr.js"></script>
+  <script defer src="https://www.sangsangls.com/html/mobile/static/common/js/ssls.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+    img {
+      max-width: 100%;
+    }
+
+    .cont_main {
+      margin: 0 20px;
+      text-align: center;
+    }
+
+    * {
+      font-family: 'Pretendard';
+    }
+
+    .rel {
+      position: relative;
+    }
+ 
+    
+  </style>
+</head>
+
+<body>
+	
+  <!-- breadcrumb 이 있는 경우 .breadOn -->
+  <header id="header" class="">
+    <h1 class="logo">
+      <a href="#"></a>
+    </h1>
+    <div class="breadcrumb">
+      <p></p>
+    </div>
+    <div class="btn_wrap">
+      <a href="#" class="shopping">
+        <span>8</span>
+      </a>
+      <a href="#" class="search"></a>
+      <div class="hamburger_btn menu_btn">
+        <div class="ham_wrap"><span></span></div>
+      </div>
+    </div>
+    <!-- search -->
+    <div class="header_search_wrap">
+      <div class="search_box">
+        <div class="search_area">
+          <form name="hdSearchform">
+            <div class="inner_wrap">
+              <input type="text" id="hdKeyword" class="hdKeyword" name="hdSearchStr" placeholder="검색어를 입력해주세요">
+              <input type="submit">
+              <div class="text_delete"></div>
+            </div>
+
+          </form>
+        </div>
+        <div class="keyword_box">
+          <p>추천검색키워드</p>
+          <div>
+            <a href="#">#상상로스쿨만의 특별한 혜택</a>
+          </div>
+          <div>
+            <a href="#">#모두를 위한 Bright PSAT</a>
+          </div>
+          <div>
+            <a href="#">#All Kill LEET 2002 Special</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- gnb -->
+    <div class="gnb_wrap">
+      <!-- 로그아웃 .logout 로그인 .login-->
+      <div class="inner_wrap logout">
+        <!-- gnb 상단 로그아웃 -->
+        <div class="top_wrap">
+          <div class="wrap">
+            <div class="logout_ment">
+              <a href="#"><span>로그인</span>을 해주세요.</a>
+            </div>
+            <a href="#" class="btn">회원가입하기</a>
+          </div>
+        </div>
+        <!-- //gnb 상단 로그아웃 -->
+
+        <div class="scroll_wrap">
+          <div class="tab_wrap01">
+            <ul class="tab_btn">
+              <!-- 선택한 탭 class .on -->
+              <li class="mypage on">
+                <a href="#">
+                  <div class="icon"></div>
+                  <p>마이페이지</p>
+                </a>
+              </li>
+              <li class="online_lecture">
+                <a href="#">
+                  <div class="icon"></div>
+                  <p>LEET 인강</p>
+                </a>
+              </li>
+              <li class="teacher_about">
+                <a href="#">
+                  <div class="icon"></div>
+                  <p>교수소개</p>
+                </a>
+              </li>
+              <li class="test_info">
+                <a href="#">
+                  <div class="icon"></div>
+                  <p>수험정보</p>
+                </a>
+              </li>
+              <li class="online_bookstore">
+                <a href="#">
+                  <div class="icon"></div>
+                  <p>온라인서점</p>
+                </a>
+              </li>
+              <li class="campus">
+                <a href="#">
+                  <div class="icon"></div>
+                  <p>강남캠퍼스</p>
+                </a>
+              </li>
+            </ul>
+            <div class="tab_cont">
+              <ul class="gnb">
+                <!-- 메뉴가 열릴 때 class .on 붙어야함 -->
+                <li>
+                  <a href="#">내 강의실</a>
+                  <ul class="lnb">
+                    <li><a href="#">수강 중인 강좌</a></li>
+                    <li><a href="#">수강 완료 강좌</a></li>
+                    <li><a href="#">학원 강좌</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">관심 강좌</a>
+                </li>
+                <li>
+                  <a href="#">나의 문의</a>
+                </li>
+                <li>
+                  <a href="#">받은 쪽지함 <span class="mail_num">8</span></a>
+                </li>
+                <li>
+                  <a href="#">주문·배송·결제</a>
+                  <ul class="lnb">
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">주문/배송 조회</a></li>
+                    <li><a href="#">포인트/쿠폰</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">개인정보</a>
+                  <ul class="lnb">
+                    <li><a href="#">개인정보 수정</a></li>
+                    <li><a href="#">회원 탈퇴</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="gnb">
+                <!-- 메뉴가 열릴 때 class .on 붙어야함 -->
+                <li>
+                  <a href="#">프리패스</a>
+                  <ul class="lnb">
+                    <li><a href="#">상상패스</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">과목별 강좌</a>
+                  <ul class="lnb">
+                    <li><a href="#">언어이해</a></li>
+                    <li><a href="#">추리논증</a></li>
+                    <li><a href="#">독해논술</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">단계별 강좌</a>
+                  <ul class="lnb">
+                    <li><a href="#">[선택] 입문</a></li>
+                    <li><a href="#">[행동] 이론</a></li>
+                    <li><a href="#">[확장] 특강</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">POST-LEET</a>
+                </li>
+              </ul>
+              <ul class="gnb">
+                <!-- 메뉴가 열릴 때 class .on 붙어야함 -->
+                <li>
+                  <a href="#">LEET</a>
+                  <ul class="lnb">
+                    <li><a href="#">김동규</a></li>
+                    <li><a href="#">황혜진</a></li>
+                    <li><a href="#">김재형</a></li>
+                    <li><a href="#">김은정</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="gnb">
+                <!-- 메뉴가 열릴 때 class .on 붙어야함 -->
+                <li>
+                  <a href="#">모집요강</a>
+                </li>
+                <li>
+                  <a href="#">LEET 가이드</a>
+                  <ul class="lnb">
+                    <li><a href="#">LEET 시험소개</a></li>
+                    <li><a href="#">기출문제T</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">로스쿨 가이드</a>
+                </li>
+              </ul>
+              <ul class="gnb">
+                <!-- 메뉴가 열릴 때 class .on 붙어야함 -->
+                <li>
+                  <a href="#">신간교재</a>
+                  <ul class="lnb">
+                    <li><a href="#">신간교재 프로모션</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">과목별 교재</a>
+                  <ul class="lnb">
+                    <li><a href="#">언어이해</a></li>
+                    <li><a href="#">추리논증</a></li>
+                    <li><a href="#">논술</a></li>
+                    <li><a href="#">자기소개서·면접</a></li>
+                    <li><a href="#">종합·법학</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">온라인 서점 공지사항</a>
+                </li>
+              </ul>
+              <ul class="gnb">
+                <!-- 메뉴가 열릴 때 class .on 붙어야함 -->
+                <li>
+                  <a href="#">프로그램</a>
+                  <ul class="lnb">
+                    <li><a href="#">상상법학관</a></li>
+                    <li><a href="#">따상패스</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">학원 시간표</a>
+                </li>
+                <li>
+                  <a href="#">학원 공지사항</a>
+                </li>
+                <li>
+                  <a href="#">학원 방문 상담 예약</a>
+                </li>
+                <li>
+                  <a href="#">학원 시설 안내</a>
+                </li>
+                <li>
+                  <a href="#">오시는 길</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </header>
+  
+  <div id="contents_wrap" class="w_event_wrap">
+    <div class="cont_area">
+      <!-- contents start -->
+      <div class="w_event_total">
+
+
+
+
+
+
+        <!-- 소스 입력 -->
+
+        
+        
+      </div>
+      <!-- contents end -->
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="top_btn"></div>
+    <div class="first">
+      <ul>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">PC버전</a></li>
+      </ul>
+      <a href="#" class="share_btn"></a>
+    </div>
+    <div class="second">
+      <a href="#" class="footer_logo"></a>
+      <ul>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+      <address>
+        <div class="list">
+          <span class="first_txt">㈜이매진PNM</span>
+          <dl>
+            <dt>대표</dt>
+            <dd>홍 길 동</dd>
+          </dl>
+          <dl>
+            <dt>사업자등록번호</dt>
+            <dd>000-00-00000</dd>
+          </dl>
+        </div>
+        <div class="list">
+          <dl>
+            <dt>통신판매신고번호</dt>
+            <dd>2020-서울서초-1111</dd>
+          </dl>
+          <dl>
+            <dt>신고기관명</dt>
+            <dd>서울특별시 서초구</dd>
+          </dl>
+        </div>
+        <div class="list">
+          <dl>
+            <dt>학원설립ㆍ운영등록번호</dt>
+            <dd>제00000호 상상로스쿨학원<a href="#">정보확인</a></dd>
+          </dl>
+        </div>
+        <div class="list">
+          <dl>
+            <dt>주 소</dt>
+            <dd>서울시 서초구 강남대로30길 66&#40;양재동, 산수빌딩&#41;</dd>
+          </dl>
+        </div>
+        <div class="list">
+          <dl>
+            <dt>전화번호</dt>
+            <dd>02-555-5555</dd>
+          </dl>
+          <dl>
+            <dt>FAX</dt>
+            <dd>02-555-5556</dd>
+          </dl>
+          <dl>
+            <dt>E-mail</dt>
+            <dd>cs@imagin.xxx</dd>
+          </dl>
+        </div>
+        <div class="list">
+          <dl>
+            <dt>개인정보관리책임자</dt>
+            <dd>홍길동</dd>
+          </dl>
+        </div>
+
+      </address>
+      <p class="copy">
+        COPYRIGHT <span>ⓒ</span> IMAGINE PNM CORP. ALL RIGHT RESERVED.
+      </p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
