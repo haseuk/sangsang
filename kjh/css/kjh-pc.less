@@ -1,0 +1,33 @@
+@import "../../css/asset";
+
+.kjh_wrap { .fs(0);
+  &:after { .abs; .o(0); .lt(-10000,-10000); content:url('../images/pc/kjhbook_book1.png') url('../images/pc/kjhbook_book2.png') url('../images/pc/kjhbook_book3.png'); }
+  .btn { .fs(0); .rel; .z(1); .pointer; }
+  .content { .rel; .crop;
+    img { .ml(50%); transform: translateX(-50%); }
+  }
+  .top { .h(1283); background: url('../images/pc/kjhbook_top_bg.png')center top no-repeat; .cover;
+    .content { .f;
+      .link { .wh(529,90); .abs; .lb(50%,45); .ml(55); .flex; .space-between;
+        .btn { .wh(251,90); }
+      }
+    }
+  }
+  .cont1 { .bgc(#611113); .rel; .z(1); }
+  .cont2 {
+    .tab-wrap { .wh(1200,85); .flex; .space-between; .mh-c;
+      .tab { .wh(400,85); }
+    }
+    .book-wrap { .wh(1200,1005); .mh-c;
+      .book { .f; .mh-c; .hide; }
+    }
+    &[data-book="1"] .tab-wrap { .contain('../images/pc/kjhbook_tab1.png'); }
+    &[data-book="2"] .tab-wrap { .contain('../images/pc/kjhbook_tab2.png'); }
+    &[data-book="3"] .tab-wrap { .contain('../images/pc/kjhbook_tab3.png'); }
+    &[data-book="1"] .book-wrap .book1,
+    &[data-book="2"] .book-wrap .book2,
+    &[data-book="3"] .book-wrap .book3 { .block; }
+  }
+  .cont3 { .bgc(#8c323c); }
+  .cont4 { .h(539); background: url('../images/pc/kjhbook_bottom_bg.png')center top no-repeat; .cover; }
+}
