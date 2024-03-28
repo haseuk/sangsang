@@ -1,0 +1,137 @@
+@import "asset";
+
+html { scroll-behavior: smooth; }
+.cont-wrapper { .pb(100); .-box; .crop;
+  img { .vat; }
+  .btn { .ib; .vam; .pointer; .z(1); .rel; }
+  .cont_main { .pl(200); .-box; }
+
+  .moc02 { .fs(0); .rel;
+    .tab { .abs; .lt(50%,237); .ml(-622);
+      .btn { .wh(273,184); .m(0,19); }
+    }
+    .tab-img { .hide; }
+    &[data-view="1"] { .h(1212); }
+    &[data-view="2"] { .h(1300); }
+    &[data-view="3"] { .h(1360); }
+    &[data-view="4"] { .h(1535); }
+    &[data-view="1"] .tab-img1,
+    &[data-view="2"] .tab-img2,
+    &[data-view="3"] .tab-img3,
+    &[data-view="4"] .tab-img4 { .block; }
+  }
+  .moc03 { .pr(201); .-box; }
+  .moc04 { .rel;
+    .check-member { .fs(0); .wh(280,60); .abs; .lt(50%,761); .ml(-310); }
+  }
+  .moc05 { .fs(0); .rel;
+    .tab { .fs(0); .abs; .lt(50%,202); .ml(-357);
+      .btn { .wh(126,102); .m(0,9); }
+    }
+    .tab-img { .hide; }
+    &[data-view2="1"] { .h(1025);
+      .address-wrap .link2 { .hide; }
+    }
+    &[data-view2="2"], &[data-view2="3"], &[data-view2="4"], &[data-view2="5"] { .h(1053); }
+    &[data-view2="1"] .tab2-img1,
+    &[data-view2="2"] .tab2-img2,
+    &[data-view2="3"] .tab2-img3,
+    &[data-view2="4"] .tab2-img4,
+    &[data-view2="5"] .tab2-img5 { .block; }
+
+    .address-wrap { .fs(0); .w(1106); .abs; .lt(50%,788); .ml(-554);
+      .btn { .fs(0); .wh(1106,45); .block; }
+    }
+  }
+  .moc06, .moc07, .moc09 {
+    .check-wrap { .abs; .lt(50%,324); .ml(-96);
+      ul {
+        li { .wh(650,166); .mb(25); .flex; .justify-start; .pt(46); .-box; .tl;
+          label { .fs(0); .block; width:auto; .rel;
+            input[type=radio] { .wh(14,14); .-a(#4e4e4e); .rel; .m(0); .vat; }
+            input[type=radio]:checked { .bgc(#0cc23e); }
+          }
+          div { .h(80); .pt(32); .rel;
+            span { .abs; .rt(0,18); }
+          }
+          .dead { .t(50%); transform: translateY(-50%); }
+          .online { .w(138); }
+          .site { .w(225); .ml(188);
+            label .dead { .r(20); }
+            label + label .dead { .r(80); }
+          }
+          &:nth-child(n+2) {
+            .site { .pt(23);
+              label:first-child { .mb(9); }
+            }
+          }
+          &:nth-child(2) { .mb(27); }
+          &:nth-child(3) { .mb(28); }
+        }
+      }
+    }
+    .submit { .fs(0); .wh(280,60); .abs; .lb(50%,80); .ml(-140); }
+    .agree-wrap { .wh(456,14); .abs; .lb(50%,50); .ml(-228); .flex; .space-between;
+      label { .w(320); .tl;
+        input[type=checkbox] { .wh(14,14); .-a(#4e4e4e); .rel; .m(0); .vat; }
+        input[type=checkbox]:checked { .bgc(#0cc23e); }
+      }
+      .notice { .fs(0); .wh(120,14); }
+    }
+  }
+  .moc07 {
+    .check-wrap { .t(214);
+      ul li { .mb(24);
+        &:nth-child(2) { .mb(25); }
+        &:nth-child(3) { .mb(23); }
+      }
+    }
+    .submit { .b(185); }
+    .agree-wrap { .b(155); }
+  }
+  .moc06, .moc07, .moc08 { .bgc(#253036); }
+  .moc08 {
+    .submit { .fs(0); .wh(280,60); .abs; .lb(50%,226); .ml(-240); }
+  }
+  .moc09 { background: url("../images/pc/mock_mid8_bg.png") top center no-repeat; .h(1069);
+    .cont_main { .hf; }
+    .submit-wrap { .fs(0); .abs; .lb(50%,174); .ml(-485); .wh(970,282); .flex; .space-between;
+      .s-inner { .wh(294,282); .pt(186); .tc; .rel;
+        .dead-box { .abs; .lt(50%,-13); transform: translateX(-50%); }
+        .submit { .fs(0); .wh(250,60); .ib; .m(0); }
+      }
+    }
+    .agree-wrap { .b(130); }
+  }
+  .banner { background: url("../images/pc/banner.png") top center no-repeat; .wh(173,362); .p(16,0,0,20); .-box;
+    .btn { .fs(0); .wh(149,55); .mb(2);
+      &:first-child { .h(125); }
+    }
+  }
+  &[data-mode="1"] .mode1,
+  &[data-mode="2"] .mode2,
+  &[data-mode="3"] .mode3,
+  &[data-mode="4"] .mode4,
+  &[data-mode="5"] .mode5,
+  &[data-mode="6"] .mode6 { .block; }
+
+  .mode5 { .tc;
+    .qna-tit { .ib; }
+    .qna-wrap { .w(1200); .mh-c; .tl;
+      .top { .mb(15); }
+    }
+  }
+  .mode6 { .tc;
+    .noti-tit { .ib; }
+  }
+}
+
+
+.lnb {
+  [data-lnb-wrap="1"] [data-lnb="1"] span,
+  [data-lnb-wrap="2"] [data-lnb="2"] span,
+  [data-lnb-wrap="3"] [data-lnb="3"] span,
+  [data-lnb-wrap="4"] [data-lnb="4"] span,
+  [data-lnb-wrap="5"] [data-lnb="5"] span,
+  [data-lnb-wrap="6"] [data-lnb="6"] span { .bgc(#0cc23e); .c(#fff); }
+}

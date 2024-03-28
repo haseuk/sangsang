@@ -1,0 +1,80 @@
+@import "asset";
+@use-vw:true;
+@vw: 720;
+
+.basadvpack {
+  img { .wf; .vat; }
+  .btn { .fs(0); .ib; .rel; .z(1); .pointer; }
+  article { .rel;
+    &.top { .wh(720,681); .contain('../images/mo/basadvpack_top-bg.png'); }
+    &.art1 { .wh(720,1431); .contain('../images/mo/basadvpack_art1-bg.png'); }
+    &.art2 { .wh(720,1121); .contain('../images/mo/basadvpack_art2-bg.png'); }
+    &.art3 { .wh(720,1541); .contain('../images/mo/basadvpack_art3-bg.png');
+      .btns { .wh(645,392); .abs; .lt(36,248); .flex; .justify-center; .flex-wrap;
+        .btn { .wh(153,196); .mr(11);
+          &:last-child { .mr(0); }
+        }
+      }
+      .cont { .p(0,39,0,36); .-box; .hide; }
+      [data-view="1"] .cont1,
+      [data-view="2"] .cont2,
+      [data-view="3"] .cont3,
+      [data-view="4"] .cont4,
+      [data-view="5"] .cont5,
+      [data-view="6"] .cont6,
+      [data-view="7"] .cont7,
+      [data-view="8"] .cont8 { .block; }
+    }
+    &.art4 { .pb(100); .-box;
+      .h-top { .pl(43); .-box; .mt(55);
+        p { font-family: Pretendard, sans-serif; .fs(22,40); .c(#444343);
+          b { font-family: Pretendard, sans-serif; .fs(22,40); .ls(0.01em); .bold; }
+        }
+      }
+      .package { .wh(626,1563); .contain('../images/mo/basadvpack_art4-img.png'); .m(55,0,0,43); .flex; .space-between; .flex-wrap;
+        .select-box { .wh(296,371); .rel;
+          .dc { .wh(59,59); .abs; .lt(50,180); }
+          label { .wh(296,371); .ib; .vat; .crop;
+            input[type=radio] { .wh(296,371); .pointer; .z(1); .rel; }
+            s { font-family: Pretendard, sans-serif; .block; .tr; .pr(50); .-box; text-decoration: none; .wf; .abs;
+              &.p1 { .fs(22,36); .semi-bold; .t(230); }
+              &.p2 { .fs(18,32); .thin; .c(#989898)!important; text-decoration: line-through; .t(265); }
+              &.p3 { .fs(31,42); .bold; .ls(-0.025em); .t(300);
+                i { .wh(15,15); .br(50%); .ib; .vam; .mr(10); }
+              }
+            }
+          }
+          &:nth-child(odd) label {
+            input[type=radio]:checked + s + s + s i { .bgc(#4ba6db); }
+            s { .c(#4ba6db);
+              i { .-a(#4ba6db); }
+            }
+          }
+          &:nth-child(even) label {
+            input[type=radio]:checked + s + s + s i { .bgc(#ef4a51); }
+            s { .c(#ef4a51);
+              i { .-a(#ef4a51); }
+            }
+          }
+          &:nth-child(n+3) label s {
+            &.p1 { .t(250); }
+            &.p2 { .t(285); }
+            &.p3 { .t(320); }
+          }
+        }
+      }
+      .check-box { .m(40,0,20); .tc;
+        label { .ib; .vam;
+          input[type=checkbox] { .wh(12,12); .-a(#333333); .-box; .ib; .vam; .rel; .mr(3); }
+          input[type=checkbox]:checked { .wh(12,12); .bgc(#333333); .-box; .ib; .vam; .rel; }
+          s { .fs(14); font-family: Pretendard, sans-serif; .c(#333333); .ib; .vam; text-decoration: none; }
+        }
+        .noti { .ib; .vam;
+          a { .fs(14); font-family: Pretendard, sans-serif; .medium; .c(#333333); text-decoration: underline; }
+        }
+      }
+      .purchase { .wh(280,65); .block; .mh-c; }
+    }
+    &.art5 { .wh(720,253); .contain('../images/mo/basadvpack_art5-bg.png'); }
+  }
+}

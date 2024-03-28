@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>상상로스쿨</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="robots" content="noindex">
+  <meta id="viewport" content="width=1300, user-scalable=yes" name="viewport">
+  <meta name="keyword" content="">
+  <meta name="description" content="">
+  <meta name="og:title" content="상상로스쿨">
+  <meta name="og:image" content="https://www.sangsangls.com/html/static/images/img_og.png">
+  <meta name="og:description" content="LEET에 대한 가장 앞선 생각, 상상로스쿨에서 시작합니다.">
+  <meta name="WT.ti" content="">
+  <meta name="DCS.dcsuri" content="">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"/>
+  <script src="https://www.sangsangls.com/assets/libs/jquery/jquery-1.12.4.min.js"></script>
+  <script src="https://www.sangsangls.com/assets/libs/swiper/swiper.min.js"></script>
+  <script src="https://www.sangsangls.com/assets/js/ssls.js"></script>
+  <script src="https://www.sangsangls.com/assets/js/commons.js"></script>
+  <script src="https://www.sangsangls.com/assets/js/viewtype.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://www.sangsangls.com/assets/libs/swiper/swiper.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://www.sangsangls.com/assets/css/web_style.css"/>
+
+  <style>
+    .cont_main {
+      text-align: center;
+    }
+
+    .gnb,
+    header {
+      width: 1200px !important;
+      margin: 0 auto;
+      padding-left: 100px !important;
+    }
+
+    header,
+    footer {
+      z-index: 5;
+      position: relative;
+    }
+
+    .lnb {
+      position: fixed;
+      height: calc(100%);
+      width: 200px;
+      top: 97px;
+      z-index: 4;
+      background-color: #282728;
+    }
+
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+    .lnb_wrap {
+      transform: translateY(120px);
+      text-align: center;
+    }
+
+    .lnb_t1 {
+      font-family: 'Pretendard';
+      font-size: 18px;
+      color: white;
+    }
+
+    .lnb_t2 {
+      font-family: 'Pretendard';
+      font-size: 26px;
+      color: white;
+      font-weight: bold;
+      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+
+    .lnb_t3 {
+      font-family: 'Pretendard';
+      color: white;
+      font-size: 15px;
+      font-weight: thin;
+    }
+
+    .lnb_t4 {
+      width: 180px;
+      background-color: #84bbff;
+      font-size: 23px;
+      color: #09366e;
+      font-weight: 600;
+      margin: 0 auto;
+      margin-top: 15px;
+      padding: 5px 0;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    .lnb_t5_a {
+      display: block;
+    }
+
+    .lnb_t5_a + .lnb_t5_a {
+      border-top: 1px solid #282728;
+    }
+
+    .lnb_t5_inner {
+      height: 50px;
+      background-color: white;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #282728;
+      user-select: all;
+    }
+
+
+    .lnb_t5_inner.on {
+      font-size: 16px;
+      color: #fff;
+      background: #0cc23e;
+      font-weight: 500;
+    }
+
+    .btn:hover {
+      cursor: pointer;
+      user-select: none;
+    }
+
+    #contentWrap {
+      padding-left: 200px !important;
+      overflow: hidden;
+    }
+
+    .mode1,
+    .mode2,
+    .mode3,
+    .mode4,
+    .mode5,
+    .mode6 {
+      display: none;
+    }
+
+    .banner {
+      position: fixed;
+      right: 0px;
+      top: 30%;
+      background-color: #282728;
+      font-family: 'Pretendard';
+      width: 145px;
+      border-radius: 10px;
+    }
+
+    .banner_1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #282728;
+      background-color: white;
+      border-radius: 10px;
+      flex-direction: column;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .banner_2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+      color: #f9fafb;
+      font-weight: bold;
+      padding: 13px 0;
+    }
+
+    .banner_2 + .banner_2 {
+      border-top: 1px dotted white;
+    }
+
+    .banner_3 {
+      position: fixed;
+      top: calc(30% + 245px);
+      right: 0;
+      width: 145px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .moc01 {
+      background: url("images/pc/mock_top_bg.png") no-repeat top center / cover;
+      height: 728px;
+    }
+
+    .moc02 {
+      background: #c9cdd6;
+      height: 1212px;
+    }
+
+    .moc03 {
+      height: 810px;
+    }
+
+    .moc03 img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .moc03 iframe {
+      width: 787px;
+      height: 446px;
+    }
+
+    .moc04 {
+      background: #c9cdd6;
+      height: 998px;
+    }
+
+    .moc-img {
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .moc05 {
+      background: #efedf0;
+      height: 1025px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+    .cont-wrapper {
+      padding-bottom: 100px;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    .cont-wrapper img {
+      vertical-align: top;
+    }
+    .cont-wrapper .btn {
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+      z-index: 1;
+      position: relative;
+    }
+    .cont-wrapper .cont_main {
+      padding-left: 200px;
+      box-sizing: border-box;
+    }
+    .cont-wrapper .moc02 {
+      font-size: 0px;
+      position: relative;
+    }
+    .cont-wrapper .moc02 .tab {
+      position: absolute;
+      left: 50%;
+      top: 237px;
+      right: auto;
+      bottom: auto;
+      margin-left: -622px;
+    }
+    .cont-wrapper .moc02 .tab .btn {
+      width: 273px;
+      height: 184px;
+      margin-top: 0px;
+      margin-right: 19px;
+      margin-bottom: 0px;
+      margin-left: 19px;
+    }
+    .cont-wrapper .moc02 .tab-img {
+      display: none;
+    }
+    .cont-wrapper .moc02[data-view="1"] {
+      height: 1212px;
+    }
+    .cont-wrapper .moc02[data-view="2"] {
+      height: 1300px;
+    }
+    .cont-wrapper .moc02[data-view="3"] {
+      height: 1360px;
+    }
+    .cont-wrapper .moc02[data-view="4"] {
+      height: 1535px;
+    }
+    .cont-wrapper .moc02[data-view="1"] .tab-img1,
+    .cont-wrapper .moc02[data-view="2"] .tab-img2,
+    .cont-wrapper .moc02[data-view="3"] .tab-img3,
+    .cont-wrapper .moc02[data-view="4"] .tab-img4 {
+      display: block;
+    }
+    .cont-wrapper .moc03 {
+      padding-right: 201px;
+      box-sizing: border-box;
+    }
+    .cont-wrapper .moc04 {
+      position: relative;
+    }
+    .cont-wrapper .moc04 .check-member {
+      font-size: 0px;
+      width: 280px;
+      height: 60px;
+      position: absolute;
+      left: 50%;
+      top: 761px;
+      right: auto;
+      bottom: auto;
+      margin-left: -310px;
+    }
+    .cont-wrapper .moc05 {
+      font-size: 0px;
+      position: relative;
+    }
+    .cont-wrapper .moc05 .tab {
+      font-size: 0px;
+      position: absolute;
+      left: 50%;
+      top: 202px;
+      right: auto;
+      bottom: auto;
+      margin-left: -357px;
+    }
+    .cont-wrapper .moc05 .tab .btn {
+      width: 126px;
+      height: 102px;
+      margin-top: 0px;
+      margin-right: 9px;
+      margin-bottom: 0px;
+      margin-left: 9px;
+    }
+    .cont-wrapper .moc05 .tab-img {
+      display: none;
+    }
+    .cont-wrapper .moc05[data-view2="1"] {
+      height: 1025px;
+    }
+    .cont-wrapper .moc05[data-view2="1"] .address-wrap .link2 {
+      display: none;
+    }
+    .cont-wrapper .moc05[data-view2="2"],
+    .cont-wrapper .moc05[data-view2="3"],
+    .cont-wrapper .moc05[data-view2="4"],
+    .cont-wrapper .moc05[data-view2="5"] {
+      height: 1053px;
+    }
+    .cont-wrapper .moc05[data-view2="1"] .tab2-img1,
+    .cont-wrapper .moc05[data-view2="2"] .tab2-img2,
+    .cont-wrapper .moc05[data-view2="3"] .tab2-img3,
+    .cont-wrapper .moc05[data-view2="4"] .tab2-img4,
+    .cont-wrapper .moc05[data-view2="5"] .tab2-img5 {
+      display: block;
+    }
+    .cont-wrapper .moc05 .address-wrap {
+      font-size: 0px;
+      width: 1106px;
+      position: absolute;
+      left: 50%;
+      top: 788px;
+      right: auto;
+      bottom: auto;
+      margin-left: -554px;
+    }
+    .cont-wrapper .moc05 .address-wrap .btn {
+      font-size: 0px;
+      width: 1106px;
+      height: 45px;
+      display: block;
+    }
+    .cont-wrapper .moc06 .check-wrap,
+    .cont-wrapper .moc07 .check-wrap,
+    .cont-wrapper .moc09 .check-wrap {
+      position: absolute;
+      left: 50%;
+      top: 324px;
+      right: auto;
+      bottom: auto;
+      margin-left: -96px;
+    }
+    .cont-wrapper .moc06 .check-wrap ul li,
+    .cont-wrapper .moc07 .check-wrap ul li,
+    .cont-wrapper .moc09 .check-wrap ul li {
+      width: 650px;
+      height: 166px;
+      margin-bottom: 25px;
+      display: flex;
+      justify-content: flex-start;
+      padding-top: 46px;
+      box-sizing: border-box;
+      text-align: left;
+    }
+    .cont-wrapper .moc06 .check-wrap ul li label,
+    .cont-wrapper .moc07 .check-wrap ul li label,
+    .cont-wrapper .moc09 .check-wrap ul li label {
+      font-size: 0px;
+      display: block;
+      width: auto;
+      position: relative;
+    }
+    .cont-wrapper .moc06 .check-wrap ul li label input[type=radio],
+    .cont-wrapper .moc07 .check-wrap ul li label input[type=radio],
+    .cont-wrapper .moc09 .check-wrap ul li label input[type=radio] {
+      width: 14px;
+      height: 14px;
+      border: 1px solid #4e4e4e;
+      position: relative;
+      margin: 0px;
+      vertical-align: top;
+    }
+    .cont-wrapper .moc06 .check-wrap ul li label input[type=radio]:checked,
+    .cont-wrapper .moc07 .check-wrap ul li label input[type=radio]:checked,
+    .cont-wrapper .moc09 .check-wrap ul li label input[type=radio]:checked {
+      background-color: #0cc23e;
+    }
+    .cont-wrapper .moc06 .check-wrap ul li div,
+    .cont-wrapper .moc07 .check-wrap ul li div,
+    .cont-wrapper .moc09 .check-wrap ul li div {
+      height: 80px;
+      padding-top: 32px;
+      position: relative;
+    }
+    .cont-wrapper .moc06 .check-wrap ul li div span,
+    .cont-wrapper .moc07 .check-wrap ul li div span,
+    .cont-wrapper .moc09 .check-wrap ul li div span {
+      position: absolute;
+      right: 0px;
+      top: 18px;
+      left: auto;
+      bottom: auto;
+    }
+    .cont-wrapper .moc06 .check-wrap ul li .dead,
+    .cont-wrapper .moc07 .check-wrap ul li .dead,
+    .cont-wrapper .moc09 .check-wrap ul li .dead {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .cont-wrapper .moc06 .check-wrap ul li .online,
+    .cont-wrapper .moc07 .check-wrap ul li .online,
+    .cont-wrapper .moc09 .check-wrap ul li .online {
+      width: 138px;
+    }
+    .cont-wrapper .moc06 .check-wrap ul li .site,
+    .cont-wrapper .moc07 .check-wrap ul li .site,
+    .cont-wrapper .moc09 .check-wrap ul li .site {
+      width: 225px;
+      margin-left: 188px;
+    }
+    .cont-wrapper .moc06 .check-wrap ul li .site label .dead,
+    .cont-wrapper .moc07 .check-wrap ul li .site label .dead,
+    .cont-wrapper .moc09 .check-wrap ul li .site label .dead {
+      right: 20px;
+    }
+    .cont-wrapper .moc06 .check-wrap ul li .site label + label .dead,
+    .cont-wrapper .moc07 .check-wrap ul li .site label + label .dead,
+    .cont-wrapper .moc09 .check-wrap ul li .site label + label .dead {
+      right: 80px;
+    }
+    .cont-wrapper .moc06 .check-wrap ul li:nth-child(n+2) .site,
+    .cont-wrapper .moc07 .check-wrap ul li:nth-child(n+2) .site,
+    .cont-wrapper .moc09 .check-wrap ul li:nth-child(n+2) .site {
+      padding-top: 23px;
+    }
+    .cont-wrapper .moc06 .check-wrap ul li:nth-child(n+2) .site label:first-child,
+    .cont-wrapper .moc07 .check-wrap ul li:nth-child(n+2) .site label:first-child,
+    .cont-wrapper .moc09 .check-wrap ul li:nth-child(n+2) .site label:first-child {
+      margin-bottom: 9px;
+    }
+    .cont-wrapper .moc06 .check-wrap ul li:nth-child(2),
+    .cont-wrapper .moc07 .check-wrap ul li:nth-child(2),
+    .cont-wrapper .moc09 .check-wrap ul li:nth-child(2) {
+      margin-bottom: 27px;
+    }
+    .cont-wrapper .moc06 .check-wrap ul li:nth-child(3),
+    .cont-wrapper .moc07 .check-wrap ul li:nth-child(3),
+    .cont-wrapper .moc09 .check-wrap ul li:nth-child(3) {
+      margin-bottom: 28px;
+    }
+    .cont-wrapper .moc06 .submit,
+    .cont-wrapper .moc07 .submit,
+    .cont-wrapper .moc09 .submit {
+      font-size: 0px;
+      width: 280px;
+      height: 60px;
+      position: absolute;
+      left: 50%;
+      bottom: 80px;
+      right: auto;
+      top: auto;
+      margin-left: -140px;
+    }
+    .cont-wrapper .moc06 .agree-wrap,
+    .cont-wrapper .moc07 .agree-wrap,
+    .cont-wrapper .moc09 .agree-wrap {
+      width: 456px;
+      height: 14px;
+      position: absolute;
+      left: 50%;
+      bottom: 50px;
+      right: auto;
+      top: auto;
+      margin-left: -228px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .cont-wrapper .moc06 .agree-wrap label,
+    .cont-wrapper .moc07 .agree-wrap label,
+    .cont-wrapper .moc09 .agree-wrap label {
+      width: 320px;
+      text-align: left;
+    }
+    .cont-wrapper .moc06 .agree-wrap label input[type=checkbox],
+    .cont-wrapper .moc07 .agree-wrap label input[type=checkbox],
+    .cont-wrapper .moc09 .agree-wrap label input[type=checkbox] {
+      width: 14px;
+      height: 14px;
+      border: 1px solid #4e4e4e;
+      position: relative;
+      margin: 0px;
+      vertical-align: top;
+    }
+    .cont-wrapper .moc06 .agree-wrap label input[type=checkbox]:checked,
+    .cont-wrapper .moc07 .agree-wrap label input[type=checkbox]:checked,
+    .cont-wrapper .moc09 .agree-wrap label input[type=checkbox]:checked {
+      background-color: #0cc23e;
+    }
+    .cont-wrapper .moc06 .agree-wrap .notice,
+    .cont-wrapper .moc07 .agree-wrap .notice,
+    .cont-wrapper .moc09 .agree-wrap .notice {
+      font-size: 0px;
+      width: 120px;
+      height: 14px;
+    }
+    .cont-wrapper .moc07 .check-wrap {
+      top: 214px;
+    }
+    .cont-wrapper .moc07 .check-wrap ul li {
+      margin-bottom: 24px;
+    }
+    .cont-wrapper .moc07 .check-wrap ul li:nth-child(2) {
+      margin-bottom: 25px;
+    }
+    .cont-wrapper .moc07 .check-wrap ul li:nth-child(3) {
+      margin-bottom: 23px;
+    }
+    .cont-wrapper .moc07 .submit {
+      bottom: 185px;
+    }
+    .cont-wrapper .moc07 .agree-wrap {
+      bottom: 155px;
+    }
+    .cont-wrapper .moc06,
+    .cont-wrapper .moc07,
+    .cont-wrapper .moc08 {
+      background-color: #253036;
+    }
+    .cont-wrapper .moc08 .submit {
+      font-size: 0px;
+      width: 280px;
+      height: 60px;
+      position: absolute;
+      left: 50%;
+      bottom: 226px;
+      right: auto;
+      top: auto;
+      margin-left: -240px;
+    }
+    .cont-wrapper .moc09 {
+      background: url("images/pc/mock_mid8_bg.png") top center no-repeat;
+      height: 1069px;
+    }
+    .cont-wrapper .moc09 .cont_main {
+      height: 100%;
+    }
+    .cont-wrapper .moc09 .submit-wrap {
+      font-size: 0px;
+      position: absolute;
+      left: 50%;
+      bottom: 174px;
+      right: auto;
+      top: auto;
+      margin-left: -485px;
+      width: 970px;
+      height: 282px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .cont-wrapper .moc09 .submit-wrap .s-inner {
+      width: 294px;
+      height: 282px;
+      padding-top: 186px;
+      text-align: center;
+      position: relative;
+    }
+    .cont-wrapper .moc09 .submit-wrap .s-inner .dead-box {
+      position: absolute;
+      left: 50%;
+      top: -13px;
+      right: auto;
+      bottom: auto;
+      transform: translateX(-50%);
+    }
+    .cont-wrapper .moc09 .submit-wrap .s-inner .submit {
+      font-size: 0px;
+      width: 250px;
+      height: 60px;
+      display: inline-block;
+      margin: 0px;
+    }
+    .cont-wrapper .moc09 .agree-wrap {
+      bottom: 130px;
+    }
+    .cont-wrapper .banner {
+      background: url("images/pc/banner.png") top center no-repeat;
+      width: 173px;
+      height: 362px;
+      padding-top: 16px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 20px;
+      box-sizing: border-box;
+    }
+    .cont-wrapper .banner .btn {
+      font-size: 0px;
+      width: 149px;
+      height: 55px;
+      margin-bottom: 2px;
+    }
+    .cont-wrapper .banner .btn:first-child {
+      height: 125px;
+    }
+    .cont-wrapper[data-mode="1"] .mode1,
+    .cont-wrapper[data-mode="2"] .mode2,
+    .cont-wrapper[data-mode="3"] .mode3,
+    .cont-wrapper[data-mode="4"] .mode4,
+    .cont-wrapper[data-mode="5"] .mode5,
+    .cont-wrapper[data-mode="6"] .mode6 {
+      display: block;
+    }
+    .cont-wrapper .mode5 {
+      text-align: center;
+    }
+    .cont-wrapper .mode5 .qna-tit {
+      display: inline-block;
+    }
+    .cont-wrapper .mode5 .qna-wrap {
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+    .cont-wrapper .mode5 .qna-wrap .top {
+      margin-bottom: 15px;
+    }
+    .cont-wrapper .mode6 {
+      text-align: center;
+    }
+    .cont-wrapper .mode6 .noti-tit {
+      display: inline-block;
+    }
+    .lnb [data-lnb-wrap="1"] [data-lnb="1"] span,
+    .lnb [data-lnb-wrap="2"] [data-lnb="2"] span,
+    .lnb [data-lnb-wrap="3"] [data-lnb="3"] span,
+    .lnb [data-lnb-wrap="4"] [data-lnb="4"] span,
+    .lnb [data-lnb-wrap="5"] [data-lnb="5"] span,
+    .lnb [data-lnb-wrap="6"] [data-lnb="6"] span {
+      background-color: #0cc23e;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- header start -->
+<header>
+  <div class="gnb">
+    <h1>
+      <a href="/">
+        <!-- <img src="https://www.sangsangls.com/html/static/images/img-img-logo-color.svg" alt="상상로스쿨"> -->
+      </a>
+    </h1>
+    <div class="util">
+      <!-- 로그인 전 노출 -->
+      <ul>
+        <li><a href="">로그인</a></li>
+        <li><a href="">회원가입</a></li>
+        <li><a href="" class="link">전국모의고사</a></li>
+      </ul>
+
+    </div>
+    <div class="nav">
+      <!-- 선택 class 'on' -->
+      <ul class="menu">
+        <li><a href="">마이페이지</a></li>
+        <li><a href="">LEET 인강</a></li>
+        <li><a href="">교수소개</a></li>
+        <li><a href="">수험정보</a></li>
+        <li><a href="">서점</a></li>
+        <li><a href="">상상비전</a></li>
+      </ul>
+      <ul class="etc_menu">
+        <li><a href="" class="btn_type01">상상캠퍼스 강남</a></li>
+        <li>
+          <button class="srch"></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="srchCont">
+    <div class="srchArea">
+      <button type="button" class="close_btn"></button>
+      <div class="srchBox">
+        <div class="iptWrap">
+          <input type="text" class="srch_input" placeholder="검색어를 입력해주세요">
+          <button class="srch_del_btn"></button>
+        </div>
+        <button type="button" class="srch_btn"></button>
+      </div>
+
+      <div class="keyword_box">
+        <p>추천검색키워드</p>
+        <a href="" class="keyword">#상상로스쿨만의 특별한 혜택</a> <a href="" class="keyword">#모두를 위한 Bright PSAT</a>
+        <a href="" class="keyword">#All Kill LEET 2002 Special</a>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- header end -->
+
+
+<div id="popup01"></div>
+<!-- nav start -->
+<nav class="lnb" >
+  <div class="lnb_wrap" data-lnb-wrap="1">
+    <div class="lnb_t1">2025 상상로스쿨</div>
+    <div class="lnb_t2">LEET<br>전국 모의고사</div>
+    <div class="lnb_t5">
+      <a class="lnb_t5_a lnb-btn" data-lnb="1">
+        <span class="lnb_t5_inner btn">안내 및 신청</span>
+      </a>
+      <a class="lnb_t5_a lnb-btn" data-lnb="2">
+        <span class="lnb_t5_inner btn btn2">시간표 및 유의사항</span>
+      </a>
+      <a href="https://www.sangsangtest.com/" target="_blank" class="lnb_t5_a lnb-btn" data-lnb="3">
+        <span class="lnb_t5_inner btn btn3">온라인 응시</span>
+      </a>
+      <a href="https://www.sangsangtest.com/" target="_blank" class="lnb_t5_a lnb-btn" data-lnb="4">
+        <span class="lnb_t5_inner btn">성적 확인</span>
+      </a>
+      <a class="lnb_t5_a lnb-btn" data-lnb="5">
+        <span class="lnb_t5_inner btn">실시간 Q&A</span>
+      </a>
+      <a class="lnb_t5_a lnb-btn" data-lnb="6">
+        <span class="lnb_t5_inner btn btn4">공지사항</span>
+      </a>
+    </div>
+  </div>
+</nav>
+<!-- nav end -->
+
+<link rel="stylesheet" href="css/mock-pc.css">
+<!-- wrap start -->
+<section id="contentWrap">
+  <!-- full page 적용 class 'full_layout' -->
+  <div class="layout full_layout">
+
+    <!-- contents start -->
+    <div class="contents w_event_wrap">
+      <div class="w_event_total">
+
+
+        <!-- 소스 입력 시작 -->
+        <!-- data-mode에 따라 화면 전환 됨-->
+        <!-- data-mode="1" 안내및신청-->
+        <!-- data-mode="2" 시간표 및 유의사항-->
+        <!-- data-mode="5" 실시간 QnA-->
+        <!-- data-mode="6" 공지사항 -->
+
+        <div class="cont-wrapper" data-mode="1">
+
+          <div class="mode1">
+            <div class="moc01" id="moc01">
+              <div class="cont_main active_target motion01 ready">
+                <img src="images/pc/mock_top.png" alt="" class="moc-img">
+              </div>
+            </div>
+
+            <div class="moc02" data-view="1">
+              <div class="cont_main active_target motion01 ready">
+                <div>
+                  <div class="tit"><img src="images/pc/mock_mid1_tit.png" class="moc-img" alt=""></div>
+                  <div class="tab">
+                    <a class="btn" data-tab="1"></a>
+                    <a class="btn" data-tab="2"></a>
+                    <a class="btn" data-tab="3"></a>
+                    <a class="btn" data-tab="4"></a>
+                  </div>
+
+                  <img src="images/pc/mock_mid1_cnt1.png" class="moc-img tab-img tab-img1" alt="" >
+                  <img src="images/pc/mock_mid1_cnt2.png" class="moc-img tab-img tab-img2" alt="" >
+                  <img src="images/pc/mock_mid1_cnt3.png" class="moc-img tab-img tab-img3" alt="" >
+                  <img src="images/pc/mock_mid1_cnt4.png" class="moc-img tab-img tab-img4" alt="" >
+                </div>
+              </div>
+            </div>
+
+            <div class="moc03" id="moc03">
+              <div class="cont_main active_target motion01 ready">
+                <img src="images/pc/mock_mid2_tit.png" alt="">
+                <iframe src="https://www.youtube.com/embed/8rvy2cyE2n8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="moc04" id="moc04">
+              <div class="cont_main active_target motion01 ready">
+                <img src="images/pc/mock_mid3.png" alt="" class="moc-img">
+
+                <a class="btn check-member" >수강생 여부확인하기</a>
+              </div>
+            </div>
+
+            <div class="moc05" id="moc05" data-view2="1">
+              <div class="cont_main active_target motion01 ready">
+                <div class="tit"><img src="images/pc/mock_mid4_tit.png" class="moc-img" alt=""></div>
+                <div class="tab">
+                  <a class="btn" data-tab2="1"></a>
+                  <a class="btn" data-tab2="2"></a>
+                  <a class="btn" data-tab2="3"></a>
+                  <a class="btn" data-tab2="4"></a>
+                  <a class="btn" data-tab2="5"></a>
+                </div>
+
+                <img src="images/pc/mock_mid4_cnt1.png" class="moc-img tab-img tab2-img1" alt="" >
+                <img src="images/pc/mock_mid4_cnt2.png" class="moc-img tab-img tab2-img2" alt="" >
+                <img src="images/pc/mock_mid4_cnt3.png" class="moc-img tab-img tab2-img3" alt="" >
+                <img src="images/pc/mock_mid4_cnt4.png" class="moc-img tab-img tab2-img4" alt="" >
+                <img src="images/pc/mock_mid4_cnt5.png" class="moc-img tab-img tab2-img5" alt="" >
+                <div class="address-wrap">
+                  <a href="https://map.naver.com/p/entry/place/1115899677" class="btn link1" target="_blank">상상로스쿨 강남캠퍼스</a>
+                  <a href="https://map.naver.com/p/entry/place/11619059" class="btn link2" target="_blank">경원중학교</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="moc06" id="moc06">
+              <div class="cont_main active_target motion01 ready">
+                <img src="images/pc/mock_mid5.png" class="moc-img" alt="">
+
+                <div class="check-wrap">
+                  <ul>
+                    <li>
+                      <div class="online">
+                        <label>
+                          <input type="radio" name="chk1"><!--온라인응시-->
+                          <span class="dead"><img src="images/pc/mock_deadline.png" alt=""></span><!--마감-->
+                        </label>
+                      </div>
+                      <div class="site">
+                        <label>
+                          <input type="radio" name="chk1"><!--상상-->
+                          <span class="dead"><img src="images/pc/mock_deadline_imm.png" alt=""></span><!--마감임박-->
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="online">
+                        <label>
+                          <input type="radio" name="chk2"><!--온라인응시-->
+                        </label>
+                      </div>
+                      <div class="site">
+                        <label>
+                          <input type="radio" name="chk2"><!--상상-->
+                        </label>
+                        <label>
+                          <input type="radio" name="chk2"><!--경원-->
+                          <span class="dead"><img src="images/pc/mock_deadline.png" alt=""></span><!--마감-->
+                        </label>
+
+                      </div>
+                    </li>
+                    <li>
+                      <div class="online">
+                        <label>
+                          <input type="radio" name="chk3"><!--온라인응시-->
+                        </label>
+                      </div>
+                      <div class="site">
+                        <label>
+                          <input type="radio" name="chk3"><!--상상-->
+                        </label>
+                        <label>
+                          <input type="radio" name="chk3"><!--경원-->
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="online">
+                        <label>
+                          <input type="radio" name="chk4"><!--온라인응시-->
+                        </label>
+                      </div>
+                      <div class="site">
+                        <label>
+                          <input type="radio" name="chk4"><!--상상-->
+                        </label>
+                        <label>
+                          <input type="radio" name="chk4"><!--경원-->
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+
+                </div>
+                <a class="btn submit">신청하기</a>
+
+                <div class="agree-wrap">
+                  <label>
+                    <input type="checkbox">
+                  </label>
+                  <a href="" class="btn notice">상품 안내 및 유의사항</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="moc07">
+              <div class="cont_main active_target motion01 ready">
+                <img src="images/pc/mock_mid6.png" class="moc-img" alt="">
+
+                <div class="check-wrap">
+                  <ul>
+                    <li>
+                      <div class="online">
+                        <label>
+                          <input type="radio" name="chk1"><!--온라인응시-->
+                          <span class="dead"><img src="images/pc/mock_deadline.png" alt=""></span><!--마감-->
+                        </label>
+                      </div>
+                      <div class="site">
+                        <label>
+                          <input type="radio" name="chk1"><!--상상-->
+                          <span class="dead"><img src="images/pc/mock_deadline_imm.png" alt=""></span><!--마감임박-->
+                        </label>
+
+                      </div>
+                    </li>
+                    <li>
+                      <div class="online">
+                        <label>
+                          <input type="radio" name="chk2"><!--온라인응시-->
+                        </label>
+                      </div>
+                      <div class="site">
+                        <label>
+                          <input type="radio" name="chk2"><!--상상-->
+                          <span class="dead"><img src="images/pc/mock_deadline.png" alt=""></span><!--마감-->
+                        </label>
+                        <label>
+                          <input type="radio" name="chk2"><!--경원-->
+                          <span class="dead"><img src="images/pc/mock_deadline.png" alt=""></span><!--마감-->
+                        </label>
+
+                      </div>
+                    </li>
+                    <li>
+                      <div class="online">
+                        <label>
+                          <input type="radio" name="chk3"><!--온라인응시-->
+                        </label>
+                      </div>
+                      <div class="site">
+                        <label>
+                          <input type="radio" name="chk3"><!--상상-->
+                        </label>
+                        <label>
+                          <input type="radio" name="chk3"><!--경원-->
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="online">
+                        <label>
+                          <input type="radio" name="chk4"><!--온라인응시-->
+                        </label>
+                      </div>
+                      <div class="site">
+                        <label>
+                          <input type="radio" name="chk4"><!--상상-->
+                        </label>
+                        <label>
+                          <input type="radio" name="chk4"><!--경원-->
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+
+                </div>
+                <a class="btn submit">신청하기</a>
+
+                <div class="agree-wrap">
+                  <label>
+                    <input type="checkbox">
+                  </label>
+                  <a href="" class="btn notice">상품 안내 및 유의사항</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="moc08">
+              <div class="cont_main active_target motion01 ready">
+                <img src="images/pc/mock_mid7.png" class="moc-img" alt="">
+                <a class="btn submit">신청하기</a>
+              </div>
+            </div>
+
+            <div class="moc09">
+              <div class="cont_main active_target motion01 ready">
+                <img src="images/pc/mock_mid8.png" class="moc-img" alt="">
+                <div class="submit-wrap">
+
+                  <div class="s-inner">
+                    <div class="dead-box">
+                      <span class="dead"><img src="images/pc/mock_deadline.png" alt=""></span><!--마감-->
+                      <span class="dead"><img src="images/pc/mock_deadline_imm.png" alt=""></span><!--마감-->
+                    </div>
+
+                    <a class="btn submit s1">신청하기</a>
+                  </div>
+                  <div class="s-inner">
+                    <div class="dead-box">
+                      <span class="dead"><img src="images/pc/mock_deadline.png" alt=""></span><!--마감-->
+                      <span class="dead"><img src="images/pc/mock_deadline_imm.png" alt=""></span><!--마감-->
+                    </div>
+
+                    <a class="btn submit s1">신청하기</a>
+                  </div>
+                  <div class="s-inner">
+                    <div class="dead-box">
+                      <span class="dead"><img src="images/pc/mock_deadline.png" alt=""></span><!--마감-->
+                      <span class="dead"><img src="images/pc/mock_deadline_imm.png" alt=""></span><!--마감-->
+                    </div>
+
+                    <a class="btn submit s1">신청하기</a>
+                  </div>
+                </div>
+
+                <div class="agree-wrap">
+                  <label>
+                    <input type="checkbox">
+                  </label>
+                  <a href="" class="btn notice">상품 안내 및 유의사항</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="mode2">
+            <img src="images/pc/mock_notice.png" class="moc-img" alt="">
+          </div>
+
+          <div class="banner">
+            <a href="#moc03" class="btn">작전 모의고사</a>
+            <a href="#moc05" class="btn">시행 일정</a>
+            <a href="#moc06" class="btn">응시 접수</a>
+            <a href="#moc04" class="btn">30% 할인</a>
+            <a href="#moc01" class="btn">top go</a>
+          </div>
+
+
+
+
+          <!--실시간 문의하기-->
+          <div class="mode5">
+            <img src="images/pc/mock_qna_tit.png" class="qna-tit" alt="">
+
+            <div class="qna-wrap">
+              <div class="top">
+                <a  class="btn"><img src="images/pc/mock_qna_btn.png" alt=""></a>
+              </div>
+
+              <img src="images/pc/mock_qna_cont.png" class="moc-img" alt="">
+            </div>
+          </div>
+
+          <!--공지사항-->
+          <div class="mode6">
+            <img src="images/pc/mock_notice_tit.png" class="noti-tit" alt="">
+
+            <div class="noti-wrap">
+              <img src="images/pc/mock_notice_cont.png" class="moc-img" alt="">
+            </div>
+          </div>
+
+
+          <!--오른쪽 다이렉트 버튼-->
+          <div class="banner">
+            <a href="#moc03" class="btn">작전 모의고사</a>
+            <a href="#moc05" class="btn">시행 일정</a>
+            <a href="#moc06" class="btn">응시 접수</a>
+            <a href="#moc04" class="btn">30% 할인</a>
+            <a href="#moc01" class="btn">top go</a>
+          </div>
+        </div>
+
+
+
+        <!-- 소스 입력 끝 -->
+
+
+      </div>
+    </div>
+    <!-- contents end -->
+  </div>
+</section>
+<!-- wrap end -->
+
+
+<script>
+
+  //lnb
+  let lnbBtn = document.querySelectorAll('.lnb .lnb-btn');
+  let lnbWrap = document.querySelector('.lnb_wrap');
+  Array.prototype.forEach.call(lnbBtn, function(e, id) {
+    e.addEventListener('click', function() {
+      let idx = e.getAttribute('data-lnb');
+      lnbWrap.setAttribute('data-lnb-wrap', idx);
+      let num = id+1;
+      if(num === 3 || num === 4) return;
+      modeChange(num);
+    })
+  });
+
+  let dataMode = document.querySelector('.cont-wrapper');
+  function modeChange(v) {
+    dataMode.setAttribute('data-mode', v);
+  }
+
+  //moc02 tab
+  let tab2Btns = document.querySelectorAll('.moc02 .tab .btn');
+  let moc02 = document.querySelector('.moc02');
+  Array.prototype.forEach.call(tab2Btns, function(e) {
+    e.addEventListener('click', function() {
+      let idx = e.getAttribute('data-tab');
+      moc02.setAttribute('data-view', idx);
+    })
+  })
+
+  //moc05 tab
+  let tab5Btns = document.querySelectorAll('.moc05 .tab .btn');
+  let moc05 = document.querySelector('.moc05');
+  Array.prototype.forEach.call(tab5Btns, function(e) {
+    e.addEventListener('click', function() {
+      let idx = e.getAttribute('data-tab2');
+      moc05.setAttribute('data-view2', idx);
+    })
+  })
+</script>
+
+<!-- footer start -->
+<footer>
+  <div class="f_top">
+    <div>
+      <ul>
+        <li><a href="">회사소개</a></li>
+        <li><a href="" class="fontB">개인정보처리방침</a></li>
+        <li><a href="">이용약관</a></li>
+        <li><a href="">고객센터</a></li>
+        <li><a href="">찾아오시는 길</a></li>
+        <li><a href="">강사모집</a></li>
+      </ul>
+      <a href="" class="share_btn">공유하기</a>
+    </div>
+  </div>
+  <div class="f_bottom">
+    <div>
+      <img src="https://www.sangsangls.com//html/static/images/img-img-logo-gr.svg" alt="상상로스쿨">
+      <div class="add_box">
+        <p class="fontB">㈜이매진PNM</p>
+        <p>대표 홍 길 동</p>
+        <p>사업자등록번호 000-00-00000</p>
+        <p>통신판매신고번호 2020-서울서초-1111</p>          <br/>
+        <p>신고기관명 서울특별시 서초구</p>
+        <p>주 소 서울시 서초구 강남대로30길 66(양재동, 산수빌딩)</p>          <br/>
+        <p>전화번호 02-555-5555</p>
+        <p>FAX 02-555-5556</p>
+        <p>E-mail cs@imagin.xxx</p>
+        <p>개인정보관리책임자 홍길동</p>
+      </div>
+      <p class="copy">COPYRIGHT ⓒ IMAGINE PNM CORP. ALL RIGHT RESERVED.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

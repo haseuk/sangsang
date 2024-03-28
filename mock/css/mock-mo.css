@@ -1,0 +1,459 @@
+html {
+  scroll-behavior: smooth;
+}
+.mock_content .mock_wrap {
+  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+  font-size: 0vw;
+}
+.mock_content .mock_wrap img {
+  width: 100%;
+  vertical-align: top;
+}
+.mock_content .mock_wrap .btn {
+  font-size: 0vw;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.mock_content .mock_wrap .banner-tab {
+  font-size: 0vw;
+  text-align: center;
+  position: fixed;
+  left: 2.36111111vw;
+  top: 48px;
+  width: 95.83333333vw;
+  padding-top: 2.77777778vw;
+  box-sizing: border-box;
+  z-index: 10;
+}
+.mock_content .mock_wrap .banner-tab .btn {
+  font-size: 2.36111111vw;
+  line-height: 7.63888889vw;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  background-color: #555;
+  width: 20.83333333vw;
+  height: 7.63888889vw;
+  display: inline-block;
+  margin-top: 0vw;
+  margin-right: 0.27777778vw;
+  margin-bottom: 0vw;
+  margin-left: 0.27777778vw;
+  vertical-align: middle;
+  border-radius: 0.69444444vw;
+}
+.mock_content .mock_wrap .banner-tab .btn:first-child {
+  width: 31.11111111vw;
+}
+.mock_content .mock_wrap .banner-tab[data-banner-tab="1"] .btn1,
+.mock_content .mock_wrap .banner-tab[data-banner-tab="2"] .btn2,
+.mock_content .mock_wrap .banner-tab[data-banner-tab="3"] .btn3,
+.mock_content .mock_wrap .banner-tab[data-banner-tab="4"] .btn4 {
+  font-size: 2.63888889vw;
+  font-weight: 700;
+  background-color: #0cc23e;
+}
+.mock_content .mock_wrap .top {
+  background-image: url("../images/mo/mock_top_bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 102.36111111vw;
+}
+.mock_content .mock_wrap .mid1 {
+  position: relative;
+  background-color: #c9cdd6;
+}
+.mock_content .mock_wrap .mid1 .tit {
+  position: relative;
+  z-index: 1;
+}
+.mock_content .mock_wrap .mid1 .cont {
+  background-color: #c9cdd6;
+  height: 168.33333333vw;
+}
+.mock_content .mock_wrap .mid1 .cont .c-tab {
+  position: absolute;
+  left: 6.11111111vw;
+  top: 30.41666667vw;
+  right: auto;
+  bottom: auto;
+  width: 87.5vw;
+  height: 30.41666667vw;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-between;
+}
+.mock_content .mock_wrap .mid1 .cont .c-tab .btn {
+  width: 42.22222222vw;
+  height: 14.30555556vw;
+}
+.mock_content .mock_wrap .mid1 .cont .img-wrap .c-img {
+  display: none;
+}
+.mock_content .mock_wrap .mid1[data-mid1="2"] .cont,
+.mock_content .mock_wrap .mid1[data-mid1="3"] .cont {
+  height: 269.44444444vw;
+}
+.mock_content .mock_wrap .mid1[data-mid1="4"] .cont {
+  height: 304.16666667vw;
+}
+.mock_content .mock_wrap .mid1[data-mid1="1"] .img-wrap .c-img1,
+.mock_content .mock_wrap .mid1[data-mid1="2"] .img-wrap .c-img2,
+.mock_content .mock_wrap .mid1[data-mid1="3"] .img-wrap .c-img3,
+.mock_content .mock_wrap .mid1[data-mid1="4"] .img-wrap .c-img4 {
+  display: block;
+}
+.mock_content .mock_wrap .mid2 {
+  padding-bottom: 13.75vw;
+  box-sizing: border-box;
+}
+.mock_content .mock_wrap .mid2 iframe {
+  width: 76.38888889vw;
+  height: 43.05555556vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.mock_content .mock_wrap .mid3 {
+  background-color: #c9cdd6;
+}
+.mock_content .mock_wrap .mid3 .cont {
+  position: relative;
+}
+.mock_content .mock_wrap .mid3 .cont .btn {
+  width: 41.66666667vw;
+  height: 7.5vw;
+  position: absolute;
+  left: 50%;
+  bottom: 26.80555556vw;
+  right: auto;
+  top: auto;
+  transform: translateX(-50%);
+}
+.mock_content .mock_wrap .mid4 {
+  background-color: #efedf0;
+}
+.mock_content .mock_wrap .mid4 .cont .select {
+  font-size: 0vw;
+  text-align: center;
+  position: relative;
+  width: 51.11111111vw;
+  height: 5vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mock_content .mock_wrap .mid4 .cont .select:after {
+  content: '';
+  display: block;
+  width: 1.94444444vw;
+  height: 1.66666667vw;
+  background-image: url('../images/mo/mock_icon_tri.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 1.25vw;
+  top: 1.66666667vw;
+  left: auto;
+  bottom: auto;
+  pointer-events: none;
+}
+.mock_content .mock_wrap .mid4 .cont .select select {
+  font-size: 2.36111111vw;
+  line-height: 4.72222222vw;
+  color: #777;
+  letter-spacing: -0.05em;
+  font-weight: 300;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: left;
+  padding-left: 2.77777778vw;
+  box-sizing: border-box;
+  border: 1px solid #b4b4b4;
+}
+.mock_content .mock_wrap .mid4 .cont .val-wrap {
+  margin-top: 4.30555556vw;
+  position: relative;
+}
+.mock_content .mock_wrap .mid4 .cont .val-wrap .val-cnt {
+  display: none;
+}
+.mock_content .mock_wrap .mid4 .cont .val-wrap .location {
+  position: absolute;
+  left: 9.72222222vw;
+  top: 93.47222222vw;
+  right: auto;
+  bottom: auto;
+  width: 79.86111111vw;
+  height: 18.05555556vw;
+}
+.mock_content .mock_wrap .mid4 .cont .val-wrap .location .btn {
+  width: 100%;
+  height: 9.02777778vw;
+  display: block;
+}
+.mock_content .mock_wrap .mid4[data-select="1"] .val-wrap .location .btn:last-child {
+  display: none;
+}
+.mock_content .mock_wrap .mid4[data-select="1"] .val-wrap .val1,
+.mock_content .mock_wrap .mid4[data-select="2"] .val-wrap .val2,
+.mock_content .mock_wrap .mid4[data-select="3"] .val-wrap .val3,
+.mock_content .mock_wrap .mid4[data-select="4"] .val-wrap .val4,
+.mock_content .mock_wrap .mid4[data-select="5"] .val-wrap .val5 {
+  display: block;
+}
+.mock_content .mock_wrap .mid5 {
+  background-color: #253036;
+  position: relative;
+}
+.mock_content .mock_wrap .mid5 .cont {
+  position: relative;
+}
+.mock_content .mock_wrap .mid5 .cont .chk-wrap {
+  position: absolute;
+  width: 79.16666667vw;
+  left: 10.27777778vw;
+  top: 46.52777778vw;
+  right: auto;
+  bottom: auto;
+}
+.mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box {
+  width: 79.16666667vw;
+  height: 30.69444444vw;
+  padding-top: 15.27777778vw;
+  padding-right: 0vw;
+  padding-bottom: 4.44444444vw;
+  padding-left: 7.08333333vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 3.75vw;
+}
+.mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box div {
+  padding-top: 4.72222222vw;
+  box-sizing: border-box;
+  position: relative;
+}
+.mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box div label {
+  width: 18.05555556vw;
+  height: 1.94444444vw;
+  display: block;
+  position: relative;
+}
+.mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box div label input[type=radio] {
+  width: 1.94444444vw;
+  height: 1.94444444vw;
+  border: 1px solid #4e4e4e;
+  margin: 0vw;
+  overflow: visible;
+  clip: unset;
+}
+.mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box div label input[type=radio]:checked {
+  background-color: #0cc23e;
+}
+.mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box div .dead {
+  width: 6.25vw;
+  height: 6.25vw;
+  display: inline-block;
+  position: absolute;
+  right: 0vw;
+  top: 50%;
+  left: auto;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+.mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box div .dead img {
+  width: 100%;
+}
+.mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box .online {
+  width: 17.77777778vw;
+}
+.mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box .site {
+  width: 31.94444444vw;
+  padding-top: 3.19444444vw;
+  margin-left: 19.72222222vw;
+}
+.mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box .site label {
+  width: 27.77777778vw;
+}
+.mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box .site label:last-of-type {
+  margin-top: 1.52777778vw;
+}
+.mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box .site label:first-of-type {
+  margin-top: 0vw;
+}
+.mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box .site label + label .dead {
+  right: 6.94444444vw;
+}
+.mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box:nth-child(1) .site {
+  padding-top: 4.72222222vw;
+}
+.mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box:nth-child(2) {
+  margin-bottom: 4.02777778vw;
+}
+.mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box:nth-child(3) {
+  margin-bottom: 4.16666667vw;
+}
+.mock_content .mock_wrap .mid5 .cont .submit {
+  width: 38.88888889vw;
+  height: 7.77777778vw;
+  position: absolute;
+  left: 29.86111111vw;
+  bottom: 10.97222222vw;
+  right: auto;
+  top: auto;
+}
+.mock_content .mock_wrap .mid5 .cont .agree-wrap {
+  width: 63.19444444vw;
+  height: 1.94444444vw;
+  position: absolute;
+  left: 18.05555556vw;
+  bottom: 6.80555556vw;
+  right: auto;
+  top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.mock_content .mock_wrap .mid5 .cont .agree-wrap label input[type=checkbox] {
+  width: 1.94444444vw;
+  height: 1.94444444vw;
+  border: 1px solid #4e4e4e;
+  display: inline-block;
+}
+.mock_content .mock_wrap .mid5 .cont .agree-wrap .noti-link {
+  width: 16.38888889vw;
+  height: 1.94444444vw;
+}
+.mock_content .mock_wrap .mid5 .cont.cont2 .chk-wrap {
+  left: 10.27777778vw;
+  top: 28.05555556vw;
+  right: auto;
+  bottom: auto;
+}
+.mock_content .mock_wrap .mid5 .cont.cont2 .chk-wrap .chk-box {
+  padding-top: 15vw;
+}
+.mock_content .mock_wrap .mid5 .cont.cont2 .chk-wrap .chk-box:nth-child(1) {
+  margin-bottom: 3.88888889vw;
+}
+.mock_content .mock_wrap .mid5 .cont.cont2 .chk-wrap .chk-box:nth-child(2) {
+  margin-bottom: 4.16666667vw;
+}
+.mock_content .mock_wrap .mid5 .cont.cont2 .chk-wrap .chk-box:nth-child(3) {
+  margin-bottom: 4.44444444vw;
+}
+.mock_content .mock_wrap .mid5 .cont.cont2 .agree-wrap {
+  bottom: 6.66666667vw;
+}
+.mock_content .mock_wrap .mid5 .cont.cont3 .submit {
+  bottom: 29.16666667vw;
+}
+.mock_content .mock_wrap .mid6 {
+  position: relative;
+}
+.mock_content .mock_wrap .mid6 .box-wrap {
+  position: absolute;
+  left: 12.22222222vw;
+  top: 70.55555556vw;
+  right: auto;
+  bottom: auto;
+}
+.mock_content .mock_wrap .mid6 .box-wrap .box {
+  width: 76.52777778vw;
+  height: 22.36111111vw;
+  position: relative;
+  margin-bottom: 2.5vw;
+}
+.mock_content .mock_wrap .mid6 .box-wrap .box:last-child {
+  margin-bottom: 0vw;
+}
+.mock_content .mock_wrap .mid6 .box-wrap .box .btn {
+  width: 30.97222222vw;
+  height: 9.72222222vw;
+  position: absolute;
+  left: 39.86111111vw;
+  top: 6.25vw;
+  right: auto;
+  bottom: auto;
+  z-index: 2;
+}
+.mock_content .mock_wrap .mid6 .box-wrap .box .dead-box {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  align-items: flex-start;
+  margin-left: -3.47222222vw;
+}
+.mock_content .mock_wrap .mid6 .box-wrap .box .dead-box .dead {
+  width: 6.25vw;
+  height: 6.25vw;
+  margin-top: 0.27777778vw;
+  margin-right: 0vw;
+  margin-bottom: 0.27777778vw;
+  margin-left: 0vw;
+}
+.mock_content .mock_wrap .mid6 .box-wrap .box .dead-box .dead img {
+  width: 100%;
+}
+.mock_content .mock_wrap .mid6 .agree-wrap {
+  width: 63.19444444vw;
+  height: 1.94444444vw;
+  position: absolute;
+  left: 19.02777778vw;
+  bottom: 12.36111111vw;
+  right: auto;
+  top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.mock_content .mock_wrap .mid6 .agree-wrap label {
+  display: block;
+  width: 44.44444444vw;
+}
+.mock_content .mock_wrap .mid6 .agree-wrap label input[type=checkbox] {
+  width: 1.94444444vw;
+  height: 1.94444444vw;
+  border: 1px solid #4e4e4e;
+  display: inline-block;
+  margin: 0vw;
+  overflow: visible;
+  clip: unset;
+}
+.mock_content .mock_wrap .mid6 .agree-wrap label input[type=checkbox]:checked {
+  background-color: #0cc23e;
+}
+.mock_content .mock_wrap .mid6 .agree-wrap .noti-link {
+  width: 16.38888889vw;
+  height: 1.94444444vw;
+}
+.mock_content .mock_wrap .mid7 {
+  position: relative;
+}
+.mock_content .mock_wrap .mid7 .btns {
+  width: 84.72222222vw;
+  height: 14.72222222vw;
+  text-align: center;
+  position: absolute;
+  left: 7.22222222vw;
+  top: 19.16666667vw;
+  right: auto;
+  bottom: auto;
+}
+.mock_content .mock_wrap .mid7 .btns .btn {
+  width: 27.77777778vw;
+  height: 6.94444444vw;
+  display: inline-block;
+  margin-top: 0vw;
+  margin-right: 0.69444444vw;
+  margin-bottom: 0.69444444vw;
+  margin-left: 0vw;
+}
+.mock_content .mock_wrap .mid7 .btns .btn:nth-child(3) {
+  margin-right: 0vw;
+}
+/*# sourceMappingURL=style-mo.css.map */

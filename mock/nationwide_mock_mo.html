@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/mock-mo.css">
+</head>
+<body>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  .mock_content .mock_wrap {
+  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+    font-size: 0vw;
+  }
+  .mock_content .mock_wrap img {
+    width: 100%;
+    vertical-align: top;
+  }
+  .mock_content .mock_wrap .btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .mock_content .mock_wrap .banner-tab {
+    text-align: center;
+    position: fixed;
+    left: 2.36111111vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    width: 95.83333333vw;
+    padding-top: 2.77777778vw;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+  .mock_content .mock_wrap .banner-tab .btn {
+    font-size: 2.36111111vw;
+    line-height: 7.63888889vw;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    background-color: #555;
+    width: 20.83333333vw;
+    height: 7.63888889vw;
+    display: inline-block;
+    margin-top: 0vw;
+    margin-right: 0.27777778vw;
+    margin-bottom: 0vw;
+    margin-left: 0.27777778vw;
+    vertical-align: middle;
+    border-radius: 0.69444444vw;
+  }
+  .mock_content .mock_wrap .banner-tab .btn:first-child {
+    width: 31.11111111vw;
+  }
+  .mock_content .mock_wrap .banner-tab[data-banner-tab="1"] .btn1,
+  .mock_content .mock_wrap .banner-tab[data-banner-tab="2"] .btn2,
+  .mock_content .mock_wrap .banner-tab[data-banner-tab="3"] .btn3,
+  .mock_content .mock_wrap .banner-tab[data-banner-tab="4"] .btn4 {
+    font-size: 2.63888889vw;
+    font-weight: 700;
+    background-color: #0cc23e;
+  }
+  .mock_content .mock_wrap .top {
+    background-image: url("images/mo/mock_top_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 102.36111111vw;
+  }
+  .mock_content .mock_wrap .mid1 {
+    position: relative;
+    background-color: #c9cdd6;
+  }
+  .mock_content .mock_wrap .mid1 .tit {
+    position: relative;
+    z-index: 1;
+  }
+  .mock_content .mock_wrap .mid1 .cont {
+    background-color: #c9cdd6;
+    height: 168.33333333vw;
+  }
+  .mock_content .mock_wrap .mid1 .cont .c-tab {
+    position: absolute;
+    left: 6.11111111vw;
+    top: 30.41666667vw;
+    right: auto;
+    bottom: auto;
+    width: 87.5vw;
+    height: 30.41666667vw;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+  }
+  .mock_content .mock_wrap .mid1 .cont .c-tab .btn {
+    width: 42.22222222vw;
+    height: 14.30555556vw;
+  }
+  .mock_content .mock_wrap .mid1 .cont .img-wrap .c-img {
+    display: none;
+  }
+  .mock_content .mock_wrap .mid1[data-mid1="2"] .cont,
+  .mock_content .mock_wrap .mid1[data-mid1="3"] .cont {
+    height: 269.44444444vw;
+  }
+  .mock_content .mock_wrap .mid1[data-mid1="4"] .cont {
+    height: 304.16666667vw;
+  }
+  .mock_content .mock_wrap .mid1[data-mid1="1"] .img-wrap .c-img1,
+  .mock_content .mock_wrap .mid1[data-mid1="2"] .img-wrap .c-img2,
+  .mock_content .mock_wrap .mid1[data-mid1="3"] .img-wrap .c-img3,
+  .mock_content .mock_wrap .mid1[data-mid1="4"] .img-wrap .c-img4 {
+    display: block;
+  }
+  .mock_content .mock_wrap .mid2 {
+    padding-bottom: 13.75vw;
+    box-sizing: border-box;
+  }
+  .mock_content .mock_wrap .mid2 iframe {
+    width: 76.38888889vw;
+    height: 43.05555556vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .mock_content .mock_wrap .mid3 {
+    background-color: #c9cdd6;
+  }
+  .mock_content .mock_wrap .mid3 .cont {
+    position: relative;
+  }
+  .mock_content .mock_wrap .mid3 .cont .btn {
+    width: 41.66666667vw;
+    height: 7.5vw;
+    position: absolute;
+    left: 50%;
+    bottom: 26.80555556vw;
+    right: auto;
+    top: auto;
+    transform: translateX(-50%);
+  }
+  .mock_content .mock_wrap .mid4 {
+    background-color: #efedf0;
+  }
+  .mock_content .mock_wrap .mid4 .cont .select {
+    text-align: center;
+    position: relative;
+    width: 51.11111111vw;
+    height: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mock_content .mock_wrap .mid4 .cont .select:after {
+    content: '';
+    display: block;
+    width: 1.94444444vw;
+    height: 1.66666667vw;
+    background-image: url('images/mo/mock_icon_tri.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 1.25vw;
+    top: 1.66666667vw;
+    left: auto;
+    bottom: auto;
+    pointer-events: none;
+  }
+  .mock_content .mock_wrap .mid4 .cont .select select {
+    font-size: 2.36111111vw;
+    line-height: 4.72222222vw;
+    color: #777;
+    letter-spacing: -0.05em;
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: left;
+    padding-left: 2.77777778vw;
+    box-sizing: border-box;
+    border: 1px solid #b4b4b4;
+  }
+  .mock_content .mock_wrap .mid4 .cont .val-wrap {
+    margin-top: 4.30555556vw;
+    position: relative;
+  }
+  .mock_content .mock_wrap .mid4 .cont .val-wrap .val-cnt {
+    display: none;
+  }
+  .mock_content .mock_wrap .mid4 .cont .val-wrap .location {
+    position: absolute;
+    left: 9.72222222vw;
+    top: 93.47222222vw;
+    right: auto;
+    bottom: auto;
+    width: 79.86111111vw;
+    height: 18.05555556vw;
+  }
+  .mock_content .mock_wrap .mid4 .cont .val-wrap .location .btn {
+    width: 100%;
+    height: 9.02777778vw;
+    display: block;
+  }
+  .mock_content .mock_wrap .mid4[data-select="1"] .val-wrap .location .btn:last-child {
+    display: none;
+  }
+  .mock_content .mock_wrap .mid4[data-select="1"] .val-wrap .val1,
+  .mock_content .mock_wrap .mid4[data-select="2"] .val-wrap .val2,
+  .mock_content .mock_wrap .mid4[data-select="3"] .val-wrap .val3,
+  .mock_content .mock_wrap .mid4[data-select="4"] .val-wrap .val4,
+  .mock_content .mock_wrap .mid4[data-select="5"] .val-wrap .val5 {
+    display: block;
+  }
+  .mock_content .mock_wrap .mid5 {
+    background-color: #253036;
+    position: relative;
+  }
+  .mock_content .mock_wrap .mid5 .cont {
+    position: relative;
+  }
+  .mock_content .mock_wrap .mid5 .cont .chk-wrap {
+    position: absolute;
+    width: 79.16666667vw;
+    left: 10.27777778vw;
+    top: 46.52777778vw;
+    right: auto;
+    bottom: auto;
+  }
+  .mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box {
+    width: 79.16666667vw;
+    height: 30.69444444vw;
+    padding-top: 15.27777778vw;
+    padding-right: 0vw;
+    padding-bottom: 4.44444444vw;
+    padding-left: 7.08333333vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 3.75vw;
+  }
+  .mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box div {
+    padding-top: 4.72222222vw;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box div label {
+    width: 20.83333333vw;
+    height: 1.94444444vw;
+    display: block;
+  }
+  .mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box div label input[type=radio] {
+    width: 1.94444444vw;
+    height: 1.94444444vw;
+    border: 1px solid #4e4e4e;
+  }
+  .mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box div label input[type=radio]:checked {
+    background-color: #0cc23e;
+  }
+  .mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box div span {
+    width: 6.25vw;
+    height: 6.25vw;
+    display: inline-block;
+    position: absolute;
+  }
+  .mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box div span img {
+    width: 100%;
+  }
+  .mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box .online {
+    width: 37.5vw;
+  }
+  .mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box .site {
+    width: 31.94444444vw;
+    padding-top: 3.19444444vw;
+  }
+  .mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box .site label:last-of-type {
+    margin-top: 1.52777778vw;
+  }
+  .mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box .site label:first-of-type {
+    margin-top: 0vw;
+  }
+  .mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box:nth-child(1) .site {
+    padding-top: 4.72222222vw;
+  }
+  .mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box:nth-child(2) {
+    margin-bottom: 4.02777778vw;
+  }
+  .mock_content .mock_wrap .mid5 .cont .chk-wrap .chk-box:nth-child(3) {
+    margin-bottom: 4.16666667vw;
+  }
+  .mock_content .mock_wrap .mid5 .cont .submit {
+    width: 38.88888889vw;
+    height: 7.77777778vw;
+    position: absolute;
+    left: 29.86111111vw;
+    bottom: 10.97222222vw;
+    right: auto;
+    top: auto;
+  }
+  .mock_content .mock_wrap .mid5 .cont .agree-wrap {
+    width: 63.19444444vw;
+    height: 1.94444444vw;
+    position: absolute;
+    left: 18.05555556vw;
+    bottom: 6.80555556vw;
+    right: auto;
+    top: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mock_content .mock_wrap .mid5 .cont .agree-wrap label input[type=checkbox] {
+    width: 1.94444444vw;
+    height: 1.94444444vw;
+    border: 1px solid #4e4e4e;
+    display: inline-block;
+  }
+  .mock_content .mock_wrap .mid5 .cont .agree-wrap .noti-link {
+    width: 16.38888889vw;
+    height: 1.94444444vw;
+  }
+  .mock_content .mock_wrap .mid5 .cont.cont2 .chk-wrap {
+    left: 10.27777778vw;
+    top: 28.05555556vw;
+    right: auto;
+    bottom: auto;
+  }
+  .mock_content .mock_wrap .mid5 .cont.cont2 .chk-wrap .chk-box {
+    padding-top: 15vw;
+  }
+  .mock_content .mock_wrap .mid5 .cont.cont2 .chk-wrap .chk-box:nth-child(1) {
+    margin-bottom: 3.88888889vw;
+  }
+  .mock_content .mock_wrap .mid5 .cont.cont2 .chk-wrap .chk-box:nth-child(2) {
+    margin-bottom: 4.16666667vw;
+  }
+  .mock_content .mock_wrap .mid5 .cont.cont2 .chk-wrap .chk-box:nth-child(3) {
+    margin-bottom: 4.44444444vw;
+  }
+  .mock_content .mock_wrap .mid5 .cont.cont2 .agree-wrap {
+    bottom: 6.66666667vw;
+  }
+  .mock_content .mock_wrap .mid5 .cont.cont3 .submit {
+    bottom: 29.16666667vw;
+  }
+  .mock_content .mock_wrap .mid6 {
+    position: relative;
+  }
+  .mock_content .mock_wrap .mid6 .btns {
+    position: absolute;
+    left: 52.08333333vw;
+    top: 76.80555556vw;
+    right: auto;
+    bottom: auto;
+  }
+  .mock_content .mock_wrap .mid6 .btns .btn {
+    width: 30.97222222vw;
+    height: 9.72222222vw;
+    display: block;
+    margin-bottom: 15.13888889vw;
+  }
+  .mock_content .mock_wrap .mid6 .btns .btn:last-child {
+    margin-bottom: 0vw;
+  }
+  .mock_content .mock_wrap .mid6 .agree-wrap {
+    width: 63.19444444vw;
+    height: 1.94444444vw;
+    position: absolute;
+    left: 19.02777778vw;
+    bottom: 12.36111111vw;
+    right: auto;
+    top: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mock_content .mock_wrap .mid6 .agree-wrap label input[type=checkbox] {
+    width: 1.94444444vw;
+    height: 1.94444444vw;
+    border: 1px solid #4e4e4e;
+    display: inline-block;
+  }
+  .mock_content .mock_wrap .mid6 .agree-wrap .noti-link {
+    width: 16.38888889vw;
+    height: 1.94444444vw;
+  }
+  .mock_content .mock_wrap .mid7 {
+    position: relative;
+  }
+  .mock_content .mock_wrap .mid7 .btns {
+    width: 84.72222222vw;
+    height: 14.72222222vw;
+    text-align: center;
+    position: absolute;
+    left: 7.22222222vw;
+    top: 19.16666667vw;
+    right: auto;
+    bottom: auto;
+  }
+  .mock_content .mock_wrap .mid7 .btns .btn {
+    width: 27.77777778vw;
+    height: 6.94444444vw;
+    display: inline-block;
+    margin-top: 0vw;
+    margin-right: 0.69444444vw;
+    margin-bottom: 0.69444444vw;
+    margin-left: 0vw;
+  }
+  .mock_content .mock_wrap .mid7 .btns .btn:nth-child(3) {
+    margin-right: 0vw;
+  }
+</style>
+  <div class="mock_content">
+    <div class="mock_wrap">
+      <div class="banner-tab tab" data-banner-tab="1">
+        <a href="#mid6" class="btn btn1" data-tab="1">3/10(일) 무료응시</a>
+        <a href="#mid4" class="btn btn2" data-tab="2">시행 일정</a>
+        <a href="#mid5" class="btn btn3" data-tab="3">응시 접수</a>
+        <a href="#mid3" class="btn btn4" data-tab="4">30% 할인</a>
+      </div>
+
+      <div id="top" class="top ">
+        <div class="cont">
+          <img src="images/mo/mock_top.png" alt="">
+        </div>
+      </div>
+      
+      <div id="mid1" class="mid1 " data-mid1="1">
+        <div class="cont">
+          <img src="images/mo/mock_cnt2_tit.png" class="tit" alt="">
+          <div class="c-tab">
+            <a class="btn" data-cnt2="1">퀄리티</a>
+            <a class="btn" data-cnt2="2">역시상상</a>
+            <a class="btn" data-cnt2="3">구현100%</a>
+            <a class="btn" data-cnt2="4">증명고사</a>
+          </div>
+
+          <div class="img-wrap">
+            <img src="images/mo/mock_cnt2_1.png" class="c-img c-img1" alt="">
+            <img src="images/mo/mock_cnt2_2.png" class="c-img c-img2" alt="">
+            <img src="images/mo/mock_cnt2_3.png" class="c-img c-img3" alt="">
+            <img src="images/mo/mock_cnt2_4.png" class="c-img c-img4" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div id="mid2" class="mid2 " >
+        <div class="cont">
+          <img src="images/mo/mock_cnt3_tit.png" class="tit" alt="">
+          <iframe src="https://www.youtube.com/embed/8rvy2cyE2n8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div id="mid3" class="mid3 " >
+        <div class="cont">
+          <img src="images/mo/mock_cnt4.png" alt="">
+          <a href="" class="btn">수강생 여부 확인하기</a>
+        </div>
+      </div>
+
+      <div id="mid4" class="mid4 " data-select="1" >
+        <div class="cont">
+          <img src="images/mo/mock_cnt5_tit.png" alt="">
+          
+          <div class="select">
+            <select onchange="selected()">
+              <option name="day" value="1">작전 24.03.10 (일)</option>
+              <option name="day" value="2">1회 : 24.04.14 (일)</option>
+              <option name="day" value="3">2회 : 24.05.19 (일)</option>
+              <option name="day" value="4">3회 : 24.06.16 (일)</option>
+              <option name="day" value="5">4회 : 24.07.14 (일)</option>
+            </select>
+          </div>
+
+          <div class="val-wrap">
+            <img src="images/mo/mock_cnt5_cnt1.png" class="val-cnt val1" alt="">
+            <img src="images/mo/mock_cnt5_cnt2.png" class="val-cnt val2" alt="">
+            <img src="images/mo/mock_cnt5_cnt3.png" class="val-cnt val3" alt="">
+            <img src="images/mo/mock_cnt5_cnt4.png" class="val-cnt val4" alt="">
+            <img src="images/mo/mock_cnt5_cnt5.png" class="val-cnt val5" alt="">
+
+            <div class="location">
+              <a href="https://map.naver.com/p/entry/place/1115899677" target="_blank" class="btn">상상</a>
+              <a href="https://map.naver.com/p/entry/place/11619059" target="_blank" class="btn">경원</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div id="mid5" class="mid5 " >
+
+        <!--유료 수강생-->
+        <div class="cont cont1">
+          <img src="images/mo/mock_cnt6_cnt1.png" alt="">
+          <div class="chk-wrap chk-wrap1">
+            <div class="chk-box">
+              <div class="online">
+                <label>
+                  <input type="radio" name="chk1"><!--온라인-->
+                </label>
+              </div>
+              <div class="site">
+                <label>
+                  <input type="radio" name="chk1"><!--상상-->
+                </label>
+
+                <span class="dead1" style="right:10px;top:10px"><img src="images/mo/mock_deadlineimm.png" alt=""></span><!--마감임박-->
+              </div>
+            </div>
+
+            <div class="chk-box">
+              <div class="online">
+                <label>
+                  <input type="radio" name="chk2"><!--온라인-->
+                </label>
+              </div>
+              <div class="site">
+                <label>
+                  <input type="radio" name="chk2"><!--상상-->
+                </label>
+                <label>
+                  <input type="radio" name="chk2"><!--경원-->
+                </label>
+
+                <span class="dead2"  style="right:10px;top:10px"><img src="images/mo/mock_deadline.png" alt=""></span><!--마감-->
+              </div>
+            </div>
+
+            <div class="chk-box">
+              <div class="online">
+                <label>
+                  <input type="radio" name="chk3"><!--온라인-->
+                </label>
+              </div>
+              <div class="site">
+                <label>
+                  <input type="radio" name="chk3"><!--상상-->
+                </label>
+                <label>
+                  <input type="radio" name="chk3"><!--경원-->
+                </label>
+
+                <span class="dead2"  style="right:10px;top:10px"><img src="images/mo/mock_deadline.png" alt=""></span><!--마감-->
+              </div>
+            </div>
+
+            <div class="chk-box">
+              <div class="online">
+                <label>
+                  <input type="radio" name="chk4"><!--온라인-->
+                </label>
+              </div>
+              <div class="site">
+                <label>
+                  <input type="radio" name="chk4"><!--상상-->
+                </label>
+                <label>
+                  <input type="radio" name="chk4"><!--경원-->
+                </label>
+
+                <span class="dead1" style="right:10px;top:10px"><img src="images/mo/mock_deadlineimm.png" alt=""></span><!--마감임박-->
+              </div>
+            </div>
+          </div>
+
+          <a class="btn submit">신청하기</a>
+
+          <div class="agree-wrap">
+            <label>
+              <input type="checkbox">
+            </label>
+            <a href="" class="btn noti-link">상품 안내 및 유의사항</a>
+          </div>
+        </div>
+
+
+        <!--비수강생-->
+        <div class="cont cont2">
+          <img src="images/mo/mock_cnt6_cnt2.png" alt="">
+          <div class="chk-wrap chk-wrap2">
+            <div class="chk-box">
+              <div class="online">
+                <label>
+                  <input type="radio" name="chk1"><!--온라인-->
+                </label>
+              </div>
+              <div class="site">
+                <label>
+                  <input type="radio" name="chk1"><!--상상-->
+                </label>
+
+                <span class="dead1" style="right:10px;top:10px"><img src="images/mo/mock_deadlineimm.png" alt=""></span><!--마감임박-->
+              </div>
+            </div>
+
+            <div class="chk-box">
+              <div class="online">
+                <label>
+                  <input type="radio" name="chk2"><!--온라인-->
+                </label>
+              </div>
+              <div class="site">
+                <label>
+                  <input type="radio" name="chk2"><!--상상-->
+                </label>
+                <label>
+                  <input type="radio" name="chk2"><!--경원-->
+                </label>
+
+                <span class="dead2"  style="right:10px;top:10px"><img src="images/mo/mock_deadline.png" alt=""></span><!--마감-->
+              </div>
+            </div>
+
+            <div class="chk-box">
+              <div class="online">
+                <label>
+                  <input type="radio" name="chk3"><!--온라인-->
+                </label>
+              </div>
+              <div class="site">
+                <label>
+                  <input type="radio" name="chk3"><!--상상-->
+                </label>
+                <label>
+                  <input type="radio" name="chk3"><!--경원-->
+                </label>
+
+                <span class="dead2"  style="right:10px;top:10px"><img src="images/mo/mock_deadline.png" alt=""></span><!--마감-->
+              </div>
+            </div>
+
+            <div class="chk-box">
+              <div class="online">
+                <label>
+                  <input type="radio" name="chk4"><!--온라인-->
+                </label>
+              </div>
+              <div class="site">
+                <label>
+                  <input type="radio" name="chk4"><!--상상-->
+                </label>
+                <label>
+                  <input type="radio" name="chk4"><!--경원-->
+                </label>
+
+                <span class="dead1" style="right:10px;top:10px"><img src="images/mo/mock_deadlineimm.png" alt=""></span><!--마감임박-->
+              </div>
+            </div>
+          </div>
+
+          <a class="btn submit">신청하기</a>
+
+          <div class="agree-wrap">
+            <label>
+              <input type="checkbox">
+            </label>
+            <a href="" class="btn noti-link">상품 안내 및 유의사항</a>
+          </div>
+        </div>
+
+        <!--논술 첨삭-->
+        <div class="cont cont3">
+          <img src="images/mo/mock_cnt6_cnt3.png" alt="">
+
+          <a class="btn submit">신청하기</a>
+        </div>
+      </div>
+
+
+      <div id="mid6" class="mid6 " >
+        <div class="cont">
+          <img src="images/mo/mock_cnt7.png" alt="">
+          <div class="btns">
+            <a class="btn btn1 submit">신청하기</a>
+            <a class="btn btn2 submit">신청하기</a>
+            <a class="btn btn3 submit">신청하기</a>
+          </div>
+          <div class="agree-wrap">
+            <label>
+              <input type="checkbox">
+            </label>
+            <a href="" class="btn noti-link">상품 안내 및 유의사항</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="mid7" class="mid7">
+        <div class="cont">
+          <img src="images/mo/mock_cnt8.png" alt="">
+          <div class="btns">
+            <a href="" class="btn">시간표 및 유의사항</a>
+            <a href="" class="btn">온라인 응시</a>
+            <a href="" class="btn">성적 확인</a>
+            <a href="" class="btn">실시간 QnA</a>
+            <a href="" class="btn">공지사항</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    //배너 탭
+    let bannerTabBtn = document.querySelectorAll('.banner-tab .btn');
+    let bannerTab = document.querySelector('.banner-tab');
+    Array.prototype.forEach.call(bannerTabBtn, function(e) {
+      e.addEventListener('click', function() {
+        let idx = e.getAttribute('data-tab');
+        bannerTab.setAttribute('data-banner-tab', idx)
+      })
+    })
+
+    //상상 전국 모의고사 탭
+    let midTabBtn = document.querySelectorAll('.mid1 .c-tab .btn');
+    let mid1 = document.querySelector('.mid1');
+    Array.prototype.forEach.call(midTabBtn, function(e) {
+      e.addEventListener('click', function() {
+        let idx = e.getAttribute('data-cnt2');
+        mid1.setAttribute('data-mid1', idx)
+      })
+    });
+
+    //상상 전국모의고사 시행일정
+    let select = document.querySelector('.select select');
+    let mid4 = document.querySelector('.mid4');
+    function selected() {
+      let val = select.options[select.selectedIndex].value
+      mid4.setAttribute('data-select', val);
+    }
+  </script>
+</body>
+</html>

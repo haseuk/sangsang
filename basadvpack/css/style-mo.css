@@ -1,0 +1,274 @@
+.basadvpack img {
+  width: 100%;
+  vertical-align: top;
+}
+.basadvpack .btn {
+  font-size: 0vw;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.basadvpack article {
+  position: relative;
+}
+.basadvpack article.top {
+  width: 100vw;
+  height: 94.58333333vw;
+  background-image: url('../images/mo/basadvpack_top-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.basadvpack article.art1 {
+  width: 100vw;
+  height: 198.75vw;
+  background-image: url('../images/mo/basadvpack_art1-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.basadvpack article.art2 {
+  width: 100vw;
+  height: 155.69444444vw;
+  background-image: url('../images/mo/basadvpack_art2-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.basadvpack article.art3 {
+  width: 100vw;
+  height: 214.02777778vw;
+  background-image: url('../images/mo/basadvpack_art3-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.basadvpack article.art3 .btns {
+  width: 89.58333333vw;
+  height: 54.44444444vw;
+  position: absolute;
+  left: 5vw;
+  top: 34.44444444vw;
+  right: auto;
+  bottom: auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.basadvpack article.art3 .btns .btn {
+  width: 21.25vw;
+  height: 27.22222222vw;
+  margin-right: 1.52777778vw;
+}
+.basadvpack article.art3 .btns .btn:last-child {
+  margin-right: 0vw;
+}
+.basadvpack article.art3 .cont {
+  padding-top: 0vw;
+  padding-right: 5.41666667vw;
+  padding-bottom: 0vw;
+  padding-left: 5vw;
+  box-sizing: border-box;
+  display: none;
+}
+.basadvpack article.art3 [data-view="1"] .cont1,
+.basadvpack article.art3 [data-view="2"] .cont2,
+.basadvpack article.art3 [data-view="3"] .cont3,
+.basadvpack article.art3 [data-view="4"] .cont4,
+.basadvpack article.art3 [data-view="5"] .cont5,
+.basadvpack article.art3 [data-view="6"] .cont6,
+.basadvpack article.art3 [data-view="7"] .cont7,
+.basadvpack article.art3 [data-view="8"] .cont8 {
+  display: block;
+}
+.basadvpack article.art4 {
+  padding-bottom: 13.88888889vw;
+  box-sizing: border-box;
+}
+.basadvpack article.art4 .h-top {
+  padding-left: 5.97222222vw;
+  box-sizing: border-box;
+  margin-top: 7.63888889vw;
+}
+.basadvpack article.art4 .h-top p {
+  font-family: Pretendard, sans-serif;
+  font-size: 3.05555556vw;
+  line-height: 5.55555556vw;
+  color: #444343;
+}
+.basadvpack article.art4 .h-top p b {
+  font-family: Pretendard, sans-serif;
+  font-size: 3.05555556vw;
+  line-height: 5.55555556vw;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+}
+.basadvpack article.art4 .package {
+  width: 86.94444444vw;
+  height: 217.08333333vw;
+  background-image: url('../images/mo/basadvpack_art4-img.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 7.63888889vw;
+  margin-right: 0vw;
+  margin-bottom: 0vw;
+  margin-left: 5.97222222vw;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.basadvpack article.art4 .package .select-box {
+  width: 41.11111111vw;
+  height: 51.52777778vw;
+  position: relative;
+}
+.basadvpack article.art4 .package .select-box .dc {
+  width: 8.19444444vw;
+  height: 8.19444444vw;
+  position: absolute;
+  left: 6.94444444vw;
+  top: 25vw;
+  right: auto;
+  bottom: auto;
+}
+.basadvpack article.art4 .package .select-box label {
+  width: 41.11111111vw;
+  height: 51.52777778vw;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+}
+.basadvpack article.art4 .package .select-box label input[type=radio] {
+  width: 41.11111111vw;
+  height: 51.52777778vw;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+.basadvpack article.art4 .package .select-box label s {
+  font-family: Pretendard, sans-serif;
+  display: block;
+  text-align: right;
+  padding-right: 6.94444444vw;
+  box-sizing: border-box;
+  text-decoration: none;
+  width: 100%;
+  position: absolute;
+}
+.basadvpack article.art4 .package .select-box label s.p1 {
+  font-size: 3.05555556vw;
+  line-height: 5vw;
+  font-weight: 600;
+  top: 31.94444444vw;
+}
+.basadvpack article.art4 .package .select-box label s.p2 {
+  font-size: 2.5vw;
+  line-height: 4.44444444vw;
+  font-weight: 100;
+  color: #989898 !important;
+  text-decoration: line-through;
+  top: 36.80555556vw;
+}
+.basadvpack article.art4 .package .select-box label s.p3 {
+  font-size: 4.30555556vw;
+  line-height: 5.83333333vw;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  top: 41.66666667vw;
+}
+.basadvpack article.art4 .package .select-box label s.p3 i {
+  width: 2.08333333vw;
+  height: 2.08333333vw;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1.38888889vw;
+}
+.basadvpack article.art4 .package .select-box:nth-child(odd) label input[type=radio]:checked + s + s + s i {
+  background-color: #4ba6db;
+}
+.basadvpack article.art4 .package .select-box:nth-child(odd) label s {
+  color: #4ba6db;
+}
+.basadvpack article.art4 .package .select-box:nth-child(odd) label s i {
+  border: 1px solid #4ba6db;
+}
+.basadvpack article.art4 .package .select-box:nth-child(even) label input[type=radio]:checked + s + s + s i {
+  background-color: #ef4a51;
+}
+.basadvpack article.art4 .package .select-box:nth-child(even) label s {
+  color: #ef4a51;
+}
+.basadvpack article.art4 .package .select-box:nth-child(even) label s i {
+  border: 1px solid #ef4a51;
+}
+.basadvpack article.art4 .package .select-box:nth-child(n+3) label s.p1 {
+  top: 34.72222222vw;
+}
+.basadvpack article.art4 .package .select-box:nth-child(n+3) label s.p2 {
+  top: 39.58333333vw;
+}
+.basadvpack article.art4 .package .select-box:nth-child(n+3) label s.p3 {
+  top: 44.44444444vw;
+}
+.basadvpack article.art4 .check-box {
+  margin-top: 5.55555556vw;
+  margin-right: 0vw;
+  margin-bottom: 2.77777778vw;
+  margin-left: 0vw;
+  text-align: center;
+}
+.basadvpack article.art4 .check-box label {
+  display: inline-block;
+  vertical-align: middle;
+}
+.basadvpack article.art4 .check-box label input[type=checkbox] {
+  width: 1.66666667vw;
+  height: 1.66666667vw;
+  border: 1px solid #333333;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 0.41666667vw;
+}
+.basadvpack article.art4 .check-box label input[type=checkbox]:checked {
+  width: 1.66666667vw;
+  height: 1.66666667vw;
+  background-color: #333333;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.basadvpack article.art4 .check-box label s {
+  font-size: 1.94444444vw;
+  font-family: Pretendard, sans-serif;
+  color: #333333;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.basadvpack article.art4 .check-box .noti {
+  display: inline-block;
+  vertical-align: middle;
+}
+.basadvpack article.art4 .check-box .noti a {
+  font-size: 1.94444444vw;
+  font-family: Pretendard, sans-serif;
+  font-weight: 500;
+  color: #333333;
+  text-decoration: underline;
+}
+.basadvpack article.art4 .purchase {
+  width: 38.88888889vw;
+  height: 9.02777778vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.basadvpack article.art5 {
+  width: 100vw;
+  height: 35.13888889vw;
+  background-image: url('../images/mo/basadvpack_art5-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/*# sourceMappingURL=style-mo.css.map */

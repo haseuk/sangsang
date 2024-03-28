@@ -1,0 +1,37 @@
+@import "asset";
+
+.essaysbj {
+  img { .wf; .vat; .max-w(1200); .block; .mh-c; }
+  .essaysbj_btn { .fs(0); .ib; .rel; .z(1); .pointer; }
+  article { .rel;
+    &.top { .h(2879); background: url('../images/pc/essaysbj_top-bg.png')center top no-repeat; }
+    &.art1, &.art3 { .bgc(#e6dfcf); }
+    &.art2 { .h(1074); background: url('../images/pc/essaysbj_art2-bg.png')center top no-repeat; }
+    &.art4 { .h(1086); background: url('../images/pc/essaysbj_art4-bg.png')center top no-repeat; }
+    &.art5 { .h(1216); .bgc(#e7e0cd);
+      .tab-wrap { .h(180); background: url('../images/pc/essaysbj_tab-bg.png')center top no-repeat;
+        .tab-inner { .wh(1200,180); .p(0,60); .-box; .mh-c; .flex; .space-between; .items-center; .crop;
+          .tab { .wh(360,180); }
+        }
+      }
+      .tab-cnt { .rel; .hide;
+        .home { .wh(109,36); .abs; .l(50%); .ml(-405); .t(763); }
+        iframe { .wh(519,239); .abs; .lt(50%,614); .ml(-62); }
+      }
+      &[data-view="1"] {
+        .tab-wrap .tab-inner { .contain('../images/pc/essaysbj_tab1.png'); }
+        .cnt1 { .block; }
+      }
+      &[data-view="2"] {
+        .tab-wrap .tab-inner { .contain('../images/pc/essaysbj_tab2.png'); }
+        .cnt2 { .block; }
+      }
+      &[data-view="3"] {
+        .tab-wrap .tab-inner { .contain('../images/pc/essaysbj_tab3.png'); }
+        .cnt3 { .block;
+          .home { .ml(-265); .t(783); }
+        }
+      }
+    }
+  }
+}

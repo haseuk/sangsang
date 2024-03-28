@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://www.sangsangls.com/html/mobile/static/common/css/style.css">
+  <link rel="stylesheet" href="https://www.sangsangls.com/html/mobile/static/common/css/libs/swiper.min.css">
+  <script src="https://www.sangsangls.com/html/mobile/static/common/js/libs/jquery-2.2.4.min.js"></script>
+  <script src="https://www.sangsangls.com/html/mobile/static/common/js/libs/jquery-ui.min.js"></script>
+  <script src="https://www.sangsangls.com/html/mobile/static/common/js/libs/swiper.min.js"></script>
+  <script src="https://www.sangsangls.com/html/mobile/static/common/js/js.use9.kr.js"></script>
+  <script defer src="https://www.sangsangls.com/html/mobile/static/common/js/ssls.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+    img {
+      max-width: 100%;
+    }
+    .cont_main {
+      margin: 0 20px;
+      text-align: center;
+    }
+    * {
+      font-family: 'Pretendard', sans-serif;
+    }
+    .rel {
+      position: relative;
+    }
+
+  </style>
+</head>
+
+<body>
+	
+  <!-- breadcrumb 이 있는 경우 .breadOn -->
+  <header id="header" class="">
+    <h1 class="logo">
+      <a href="#"></a>
+    </h1>
+    <div class="breadcrumb">
+      <p></p>
+    </div>
+    <div class="btn_wrap">
+      <a href="#" class="shopping">
+        <span>8</span>
+      </a>
+      <a href="#" class="search"></a>
+      <div class="hamburger_btn menu_btn">
+        <div class="ham_wrap"><span></span></div>
+      </div>
+    </div>
+    <!-- search -->
+    <div class="header_search_wrap">
+      <div class="search_box">
+        <div class="search_area">
+          <form name="hdSearchform">
+            <div class="inner_wrap">
+              <input type="text" id="hdKeyword" class="hdKeyword" name="hdSearchStr" placeholder="검색어를 입력해주세요">
+              <input type="submit">
+              <div class="text_delete"></div>
+            </div>
+
+          </form>
+        </div>
+        <div class="keyword_box">
+          <p>추천검색키워드</p>
+          <div>
+            <a href="#">#상상로스쿨만의 특별한 혜택</a>
+          </div>
+          <div>
+            <a href="#">#모두를 위한 Bright PSAT</a>
+          </div>
+          <div>
+            <a href="#">#All Kill LEET 2002 Special</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- gnb -->
+    <div class="gnb_wrap">
+      <!-- 로그아웃 .logout 로그인 .login-->
+      <div class="inner_wrap logout">
+        <!-- gnb 상단 로그아웃 -->
+        <div class="top_wrap">
+          <div class="wrap">
+            <div class="logout_ment">
+              <a href="#"><span>로그인</span>을 해주세요.</a>
+            </div>
+            <a href="#" class="btn">회원가입하기</a>
+          </div>
+        </div>
+        <!-- //gnb 상단 로그아웃 -->
+
+        <div class="scroll_wrap">
+          <div class="tab_wrap01">
+            <ul class="tab_btn">
+              <!-- 선택한 탭 class .on -->
+              <li class="mypage on">
+                <a href="#">
+                  <div class="icon"></div>
+                  <p>마이페이지</p>
+                </a>
+              </li>
+              <li class="online_lecture">
+                <a href="#">
+                  <div class="icon"></div>
+                  <p>LEET 인강</p>
+                </a>
+              </li>
+              <li class="teacher_about">
+                <a href="#">
+                  <div class="icon"></div>
+                  <p>교수소개</p>
+                </a>
+              </li>
+              <li class="test_info">
+                <a href="#">
+                  <div class="icon"></div>
+                  <p>수험정보</p>
+                </a>
+              </li>
+              <li class="online_bookstore">
+                <a href="#">
+                  <div class="icon"></div>
+                  <p>온라인서점</p>
+                </a>
+              </li>
+              <li class="campus">
+                <a href="#">
+                  <div class="icon"></div>
+                  <p>강남캠퍼스</p>
+                </a>
+              </li>
+            </ul>
+            <div class="tab_cont">
+              <ul class="gnb">
+                <!-- 메뉴가 열릴 때 class .on 붙어야함 -->
+                <li>
+                  <a href="#">내 강의실</a>
+                  <ul class="lnb">
+                    <li><a href="#">수강 중인 강좌</a></li>
+                    <li><a href="#">수강 완료 강좌</a></li>
+                    <li><a href="#">학원 강좌</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">관심 강좌</a>
+                </li>
+                <li>
+                  <a href="#">나의 문의</a>
+                </li>
+                <li>
+                  <a href="#">받은 쪽지함 <span class="mail_num">8</span></a>
+                </li>
+                <li>
+                  <a href="#">주문·배송·결제</a>
+                  <ul class="lnb">
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">주문/배송 조회</a></li>
+                    <li><a href="#">포인트/쿠폰</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">개인정보</a>
+                  <ul class="lnb">
+                    <li><a href="#">개인정보 수정</a></li>
+                    <li><a href="#">회원 탈퇴</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="gnb">
+                <!-- 메뉴가 열릴 때 class .on 붙어야함 -->
+                <li>
+                  <a href="#">프리패스</a>
+                  <ul class="lnb">
+                    <li><a href="#">상상패스</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">과목별 강좌</a>
+                  <ul class="lnb">
+                    <li><a href="#">언어이해</a></li>
+                    <li><a href="#">추리논증</a></li>
+                    <li><a href="#">독해논술</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">단계별 강좌</a>
+                  <ul class="lnb">
+                    <li><a href="#">[선택] 입문</a></li>
+                    <li><a href="#">[행동] 이론</a></li>
+                    <li><a href="#">[확장] 특강</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">POST-LEET</a>
+                </li>
+              </ul>
+              <ul class="gnb">
+                <!-- 메뉴가 열릴 때 class .on 붙어야함 -->
+                <li>
+                  <a href="#">LEET</a>
+                  <ul class="lnb">
+                    <li><a href="#">김동규</a></li>
+                    <li><a href="#">황혜진</a></li>
+                    <li><a href="#">김재형</a></li>
+                    <li><a href="#">김은정</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="gnb">
+                <!-- 메뉴가 열릴 때 class .on 붙어야함 -->
+                <li>
+                  <a href="#">모집요강</a>
+                </li>
+                <li>
+                  <a href="#">LEET 가이드</a>
+                  <ul class="lnb">
+                    <li><a href="#">LEET 시험소개</a></li>
+                    <li><a href="#">기출문제T</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">로스쿨 가이드</a>
+                </li>
+              </ul>
+              <ul class="gnb">
+                <!-- 메뉴가 열릴 때 class .on 붙어야함 -->
+                <li>
+                  <a href="#">신간교재</a>
+                  <ul class="lnb">
+                    <li><a href="#">신간교재 프로모션</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">과목별 교재</a>
+                  <ul class="lnb">
+                    <li><a href="#">언어이해</a></li>
+                    <li><a href="#">추리논증</a></li>
+                    <li><a href="#">논술</a></li>
+                    <li><a href="#">자기소개서·면접</a></li>
+                    <li><a href="#">종합·법학</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">온라인 서점 공지사항</a>
+                </li>
+              </ul>
+              <ul class="gnb">
+                <!-- 메뉴가 열릴 때 class .on 붙어야함 -->
+                <li>
+                  <a href="#">프로그램</a>
+                  <ul class="lnb">
+                    <li><a href="#">상상법학관</a></li>
+                    <li><a href="#">따상패스</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">학원 시간표</a>
+                </li>
+                <li>
+                  <a href="#">학원 공지사항</a>
+                </li>
+                <li>
+                  <a href="#">학원 방문 상담 예약</a>
+                </li>
+                <li>
+                  <a href="#">학원 시설 안내</a>
+                </li>
+                <li>
+                  <a href="#">오시는 길</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </header>
+
+
+  <div id="contents_wrap" class="w_event_wrap">
+    <div class="cont_area">
+      <!-- contents start -->
+      <div class="w_event_total">
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- 소스 입력 -->
+        <style>
+          .basadvpack img {
+            width: 100%;
+            vertical-align: top;
+          }
+          .basadvpack .btn {
+            font-size: 0vw;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            cursor: pointer;
+          }
+          .basadvpack article {
+            position: relative;
+          }
+          .basadvpack article.top {
+            width: 100vw;
+            height: 94.58333333vw;
+            background-image: url('images/mo/basadvpack_top-bg.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+          .basadvpack article.art1 {
+            width: 100vw;
+            height: 198.75vw;
+            background-image: url('images/mo/basadvpack_art1-bg.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+          .basadvpack article.art2 {
+            width: 100vw;
+            height: 155.69444444vw;
+            background-image: url('images/mo/basadvpack_art2-bg.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+          .basadvpack article.art3 {
+            width: 100vw;
+            height: 214.02777778vw;
+            background-image: url('images/mo/basadvpack_art3-bg.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+          .basadvpack article.art3 .btns {
+            width: 89.58333333vw;
+            height: 54.44444444vw;
+            position: absolute;
+            left: 5vw;
+            top: 34.44444444vw;
+            right: auto;
+            bottom: auto;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .basadvpack article.art3 .btns .btn {
+            width: 21.25vw;
+            height: 27.22222222vw;
+            margin-right: 1.52777778vw;
+          }
+          .basadvpack article.art3 .btns .btn:last-child {
+            margin-right: 0vw;
+          }
+          .basadvpack article.art3 .cont {
+            padding-top: 0vw;
+            padding-right: 5.41666667vw;
+            padding-bottom: 0vw;
+            padding-left: 5vw;
+            box-sizing: border-box;
+            display: none;
+          }
+          .basadvpack article.art3 [data-view="1"] .cont1,
+          .basadvpack article.art3 [data-view="2"] .cont2,
+          .basadvpack article.art3 [data-view="3"] .cont3,
+          .basadvpack article.art3 [data-view="4"] .cont4,
+          .basadvpack article.art3 [data-view="5"] .cont5,
+          .basadvpack article.art3 [data-view="6"] .cont6,
+          .basadvpack article.art3 [data-view="7"] .cont7,
+          .basadvpack article.art3 [data-view="8"] .cont8 {
+            display: block;
+          }
+          .basadvpack article.art4 {
+            padding-bottom: 13.88888889vw;
+            box-sizing: border-box;
+          }
+          .basadvpack article.art4 .h-top {
+            padding-left: 5.97222222vw;
+            box-sizing: border-box;
+            margin-top: 7.63888889vw;
+          }
+          .basadvpack article.art4 .h-top p {
+            font-family: Pretendard, sans-serif;
+            font-size: 3.05555556vw;
+            line-height: 5.55555556vw;
+            color: #444343;
+          }
+          .basadvpack article.art4 .h-top p b {
+            font-family: Pretendard, sans-serif;
+            font-size: 3.05555556vw;
+            line-height: 5.55555556vw;
+            letter-spacing: 0.01em;
+            font-weight: 700;
+          }
+          .basadvpack article.art4 .package {
+            width: 86.94444444vw;
+            height: 217.08333333vw;
+            background-image: url('images/mo/basadvpack_art4-img.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-top: 7.63888889vw;
+            margin-right: 0vw;
+            margin-bottom: 0vw;
+            margin-left: 5.97222222vw;
+            justify-content: space-between;
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .basadvpack article.art4 .package .select-box {
+            width: 41.11111111vw;
+            height: 51.52777778vw;
+            position: relative;
+          }
+          .basadvpack article.art4 .package .select-box .dc {
+            width: 8.19444444vw;
+            height: 8.19444444vw;
+            position: absolute;
+            left: 6.94444444vw;
+            top: 25vw;
+            right: auto;
+            bottom: auto;
+          }
+          .basadvpack article.art4 .package .select-box label {
+            width: 41.11111111vw;
+            height: 51.52777778vw;
+            display: inline-block;
+            vertical-align: top;
+            overflow: hidden;
+          }
+          .basadvpack article.art4 .package .select-box label input[type=radio] {
+            width: 41.11111111vw;
+            height: 51.52777778vw;
+            cursor: pointer;
+            z-index: 1;
+            position: relative;
+          }
+          .basadvpack article.art4 .package .select-box label s {
+            font-family: Pretendard, sans-serif;
+            display: block;
+            text-align: right;
+            padding-right: 6.94444444vw;
+            box-sizing: border-box;
+            text-decoration: none;
+            width: 100%;
+            position: absolute;
+          }
+          .basadvpack article.art4 .package .select-box label s.p1 {
+            font-size: 3.05555556vw;
+            line-height: 5vw;
+            font-weight: 600;
+            top: 31.94444444vw;
+          }
+          .basadvpack article.art4 .package .select-box label s.p2 {
+            font-size: 2.5vw;
+            line-height: 4.44444444vw;
+            font-weight: 100;
+            color: #989898 !important;
+            text-decoration: line-through;
+            top: 36.80555556vw;
+          }
+          .basadvpack article.art4 .package .select-box label s.p3 {
+            font-size: 4.30555556vw;
+            line-height: 5.83333333vw;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            top: 41.66666667vw;
+          }
+          .basadvpack article.art4 .package .select-box label s.p3 i {
+            width: 2.08333333vw;
+            height: 2.08333333vw;
+            border-radius: 50%;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 1.38888889vw;
+          }
+          .basadvpack article.art4 .package .select-box:nth-child(odd) label input[type=radio]:checked + s + s + s i {
+            background-color: #4ba6db;
+          }
+          .basadvpack article.art4 .package .select-box:nth-child(odd) label s {
+            color: #4ba6db;
+          }
+          .basadvpack article.art4 .package .select-box:nth-child(odd) label s i {
+            border: 1px solid #4ba6db;
+          }
+          .basadvpack article.art4 .package .select-box:nth-child(even) label input[type=radio]:checked + s + s + s i {
+            background-color: #ef4a51;
+          }
+          .basadvpack article.art4 .package .select-box:nth-child(even) label s {
+            color: #ef4a51;
+          }
+          .basadvpack article.art4 .package .select-box:nth-child(even) label s i {
+            border: 1px solid #ef4a51;
+          }
+          .basadvpack article.art4 .package .select-box:nth-child(n+3) label s.p1 {
+            top: 34.72222222vw;
+          }
+          .basadvpack article.art4 .package .select-box:nth-child(n+3) label s.p2 {
+            top: 39.58333333vw;
+          }
+          .basadvpack article.art4 .package .select-box:nth-child(n+3) label s.p3 {
+            top: 44.44444444vw;
+          }
+          .basadvpack article.art4 .check-box {
+            margin-top: 5.55555556vw;
+            margin-right: 0vw;
+            margin-bottom: 2.77777778vw;
+            margin-left: 0vw;
+            text-align: center;
+          }
+          .basadvpack article.art4 .check-box label {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .basadvpack article.art4 .check-box label input[type=checkbox] {
+            width: 1.66666667vw;
+            height: 1.66666667vw;
+            border: 1px solid #333333;
+            box-sizing: border-box;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            margin-right: 0.41666667vw;
+          }
+          .basadvpack article.art4 .check-box label input[type=checkbox]:checked {
+            width: 1.66666667vw;
+            height: 1.66666667vw;
+            background-color: #333333;
+            box-sizing: border-box;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+          }
+          .basadvpack article.art4 .check-box label s {
+            font-size: 1.94444444vw;
+            font-family: Pretendard, sans-serif;
+            color: #333333;
+            display: inline-block;
+            vertical-align: middle;
+            text-decoration: none;
+          }
+          .basadvpack article.art4 .check-box .noti {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .basadvpack article.art4 .check-box .noti a {
+            font-size: 1.94444444vw;
+            font-family: Pretendard, sans-serif;
+            font-weight: 500;
+            color: #333333;
+            text-decoration: underline;
+          }
+          .basadvpack article.art4 .purchase {
+            width: 38.88888889vw;
+            height: 9.02777778vw;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .basadvpack article.art5 {
+            width: 100vw;
+            height: 35.13888889vw;
+            background-image: url('images/mo/basadvpack_art5-bg.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        </style>
+        <section class="basadvpack">
+          <article class="top">
+            <div class="art-inner"><img src="images/mo/basadvpack_top.png" alt=""></div>
+          </article>
+          
+          <article class="art1">
+            <div class="art-inner">
+              <div class="tit"><img src="images/mo/basadvpack_art1-tit.png" alt=""></div>
+              <div class="cont cont1"><img src="images/mo/basadvpack_art1-cnt1.png" alt=""></div>
+              <div class="cont cont2"><img src="images/mo/basadvpack_art1-cnt2.png" alt=""></div>
+              <div class="cont cont3"><img src="images/mo/basadvpack_art1-cnt3.png" alt=""></div>
+              <div class="cont cont4"><img src="images/mo/basadvpack_art1-cnt4.png" alt=""></div>
+            </div>
+          </article>
+
+          <article class="art2">
+            <div class="art-inner">
+              <div class="tit"><img src="images/mo/basadvpack_art2-tit.png" alt=""></div>
+              <div class="cont cont1"><img src="images/mo/basadvpack_art2-cnt1.png" alt=""></div>
+            </div>
+          </article>
+
+          <article class="art3">
+            <div class="art-inner" data-view="1">
+              <div class="tit"><img src="images/mo/basadvpack_art3-tit.png" alt=""></div>
+              <div class="btns">
+                <a class="btn" data-btn="1">김동규</a>
+                <a class="btn" data-btn="2">김재형</a>
+                <a class="btn" data-btn="3">박수민</a>
+                <a class="btn" data-btn="4">조은정</a>
+                <a class="btn" data-btn="5">박어령</a>
+                <a class="btn" data-btn="6">이태형</a>
+                <a class="btn" data-btn="7">정종욱</a>
+              </div>
+              <div class="cont cont1"><img src="images/mo/basadvpack_art3-cnt1.png" alt=""></div>
+              <div class="cont cont2"><img src="images/mo/basadvpack_art3-cnt2.png" alt=""></div>
+              <div class="cont cont3"><img src="images/mo/basadvpack_art3-cnt3.png" alt=""></div>
+              <div class="cont cont4"><img src="images/mo/basadvpack_art3-cnt4.png" alt=""></div>
+              <div class="cont cont5"><img src="images/mo/basadvpack_art3-cnt5.png" alt=""></div>
+              <div class="cont cont6"><img src="images/mo/basadvpack_art3-cnt6.png" alt=""></div>
+              <div class="cont cont7"><img src="images/mo/basadvpack_art3-cnt7.png" alt=""></div>
+            </div>
+          </article>
+
+          <article class="art4">
+            <div class="art-inner">
+              <div class="tit"><img src="images/mo/basadvpack_art4-tit.png" alt=""></div>
+              <div class="h-top">
+                <p><b>대상강좌 :</b> 결제한 교수님의 2025대비 [기본이론], [심화핵심] 과정 강의</p>
+                <p><b>수강기간 :</b> 수강 신청일로부터 120일</p>
+              </div>
+
+              <div class="package">
+                <div class="select-box">
+                  <div class="dc"><img src="images/mo/basadvpack_dc.png" alt=""></div>
+                  <label>
+                    <input type="radio" name="package">
+                    <s class="p1">추리논증 김재형 패키지</s>
+                    <s class="p2">단과 구매 시 853,000원</s>
+                    <s class="p3"><i></i> 597,000원</s>
+                  </label>
+                </div>
+                <div class="select-box">
+                  <div class="dc"><img src="images/mo/basadvpack_dc.png" alt=""></div>
+                  <label>
+                    <input type="radio" name="package">
+                    <s class="p1">언어이해 김동규 패키지</s>
+                    <s class="p2">단과 구매 시 996,000원</s>
+                    <s class="p3"><i></i> 697,000원</s>
+                  </label>
+                </div>
+                <div class="select-box">
+                  <div class="dc"><img src="images/mo/basadvpack_dc.png" alt=""></div>
+                  <label>
+                    <input type="radio" name="package">
+                    <s class="p1">추리논증 박수민 패키지</s>
+                    <s class="p2">단과 구매 시 996,000원</s>
+                    <s class="p3"><i></i> 697,000원</s>
+                  </label>
+                </div>
+                <div class="select-box">
+                  <div class="dc"><img src="images/mo/basadvpack_dc.png" alt=""></div>
+                  <label>
+                    <input type="radio" name="package">
+                    <s class="p1">언어이해 조은정 패키지</s>
+                    <s class="p2">단과 구매 시 996,000원</s>
+                    <s class="p3"><i></i> 697,000원</s>
+                  </label>
+                </div>
+                <div class="select-box">
+                  <div class="dc"><img src="images/mo/basadvpack_dc.png" alt=""></div>
+                  <label>
+                    <input type="radio" name="package">
+                    <s class="p1">추리논증 박어령 패키지</s>
+                    <s class="p2">단과 구매 시 996,000원</s>
+                    <s class="p3"><i></i> 697,000원</s>
+                  </label>
+                </div>
+                <div class="select-box">
+                  <div class="dc"><img src="images/mo/basadvpack_dc.png" alt=""></div>
+                  <label>
+                    <input type="radio" name="package">
+                    <s class="p1">언어이해 이태형 패키지</s>
+                    <s class="p2">단과 구매 시 853,000원</s>
+                    <s class="p3"><i></i> 597,000원</s>
+                  </label>
+                </div>
+                <div class="select-box">
+                  <div class="dc"><img src="images/mo/basadvpack_dc.png" alt=""></div>
+                  <label>
+                    <input type="radio" name="package">
+                    <s class="p1">논술 정종욱 패키지</s>
+                    <s class="p2">단과 구매 시 362,000원</s>
+                    <s class="p3"><i></i> 253,000원</s>
+                  </label>
+                </div>
+              </div>
+
+              <div class="check-box">
+                <label>
+                  <input type="checkbox">
+                  <s>상품 안내 및 유의사항을 모두 확인하였고 이에 동의합니다.</s>
+                </label>
+                <div class="noti"><a href="">상품 안내 및 환불 규정 ></a></div>
+              </div>
+              <a class="purchase"><img src="images/mo/purchase.png" alt=""></a>
+            </div>
+          </article>
+
+          <article class="art5">
+            <div class="art-inner"><img src="images/mo/basadvpack_art5-tit.png" alt=""></div>
+          </article>
+        </section>
+        <script>
+          let view = document.querySelector('.basadvpack .art3 .art-inner');
+          let btn = document.querySelectorAll('.basadvpack .btn')
+          Array.prototype.forEach.call(btn, function(e) {
+            e.addEventListener('click', function() {
+              let idx = e.getAttribute('data-btn');
+              view.setAttribute('data-view', idx);
+            })
+          })
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+      </div>
+      <!-- contents end -->
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="top_btn"></div>
+    <div class="first">
+      <ul>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">PC버전</a></li>
+      </ul>
+      <a href="#" class="share_btn"></a>
+    </div>
+    <div class="second">
+      <a href="#" class="footer_logo"></a>
+      <ul>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+      <address>
+        <div class="list">
+          <span class="first_txt">㈜이매진PNM</span>
+          <dl>
+            <dt>대표</dt>
+            <dd>홍 길 동</dd>
+          </dl>
+          <dl>
+            <dt>사업자등록번호</dt>
+            <dd>000-00-00000</dd>
+          </dl>
+        </div>
+        <div class="list">
+          <dl>
+            <dt>통신판매신고번호</dt>
+            <dd>2020-서울서초-1111</dd>
+          </dl>
+          <dl>
+            <dt>신고기관명</dt>
+            <dd>서울특별시 서초구</dd>
+          </dl>
+        </div>
+        <div class="list">
+          <dl>
+            <dt>학원설립ㆍ운영등록번호</dt>
+            <dd>제00000호 상상로스쿨학원<a href="#">정보확인</a></dd>
+          </dl>
+        </div>
+        <div class="list">
+          <dl>
+            <dt>주 소</dt>
+            <dd>서울시 서초구 강남대로30길 66&#40;양재동, 산수빌딩&#41;</dd>
+          </dl>
+        </div>
+        <div class="list">
+          <dl>
+            <dt>전화번호</dt>
+            <dd>02-555-5555</dd>
+          </dl>
+          <dl>
+            <dt>FAX</dt>
+            <dd>02-555-5556</dd>
+          </dl>
+          <dl>
+            <dt>E-mail</dt>
+            <dd>cs@imagin.xxx</dd>
+          </dl>
+        </div>
+        <div class="list">
+          <dl>
+            <dt>개인정보관리책임자</dt>
+            <dd>홍길동</dd>
+          </dl>
+        </div>
+
+      </address>
+      <p class="copy">
+        COPYRIGHT <span>ⓒ</span> IMAGINE PNM CORP. ALL RIGHT RESERVED.
+      </p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
